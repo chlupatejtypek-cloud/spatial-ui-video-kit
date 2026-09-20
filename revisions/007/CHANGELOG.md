@@ -11,3 +11,10 @@
 
 ## 006.1 — API keys, hook v2 (superseded by 007)
 - Owner rejected empty hook; rebuilt topic-first with generative shape, real circuit-key photo (Vecteezy), dip to dark.
+
+## 008 — always-moving cut (owner rework of 007)
+- Constant camera life (drift+zoom through every station), element life loops (breathing paper, floating sketches, gauge shimmer) — no more “moved then static”.
+- Two surface families: cream paper panels (varied sizes, gridded, corner fold) + dark board; stations differ by zoom depth.
+- Field-note tags (paper rectangle + pin dot, IBM Plex Mono) replace heavily rounded pills.
+- Hook photo caption removed; film cut to 78.9 s — narration no longer followed by silence.
+- New sticker style locked: pencil-sketch field-notes lines, chalk-blue on dark / ink-navy on paper (luminance keying). Document replaced by a self-drawing SVG.

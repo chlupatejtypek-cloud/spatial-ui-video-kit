@@ -1,0 +1,236 @@
+{
+  "id": "008",
+  "compositionId": "motion-008",
+  "timelineKey": "motion-008",
+  "name": "google-ai-studio",
+  "title": "Google AI Studio \u2014 the free Gemini playground (always-moving cut)",
+  "description": "Owner rework: constant camera drift and zoom (no static holds), varied surfaces (cream paper panels + dark board), field-note tags instead of rounded pills, sketch-style stickers (chalk on dark, ink on paper), no photo caption in the hook, no silent tail.",
+  "width": 1080,
+  "height": 1920,
+  "duration": 79,
+  "fps": 30,
+  "output": "exports/google-ai-studio.mp4",
+  "brandScan": [
+    "blackboard",
+    "noda",
+    "hyperframes",
+    "workspace",
+    "compound effect",
+    "workflow"
+  ],
+  "frameZero": [
+    "#hook-kicker",
+    "#hook-title"
+  ],
+  "signatureIds": [
+    "world",
+    "dip",
+    "hook-lockup",
+    "hook-photo",
+    "hook-title",
+    "blob-main",
+    "panel-b",
+    "st-chatbubble",
+    "title-b",
+    "promise-1",
+    "promise-2",
+    "promise-3",
+    "title-c",
+    "st-sliders",
+    "sys-note",
+    "thermo",
+    "temp-note",
+    "st-star",
+    "star-note",
+    "panel-d",
+    "st-photo",
+    "st-media",
+    "doc-doodle",
+    "title-e",
+    "st-loop",
+    "app-card",
+    "code-l1",
+    "code-l2",
+    "code-l3",
+    "glow",
+    "key-note",
+    "cycle-strip",
+    "st-rocket"
+  ],
+  "seekTimes": [
+    0.7,
+    3.2,
+    5.4,
+    8.8,
+    11.4,
+    12.9,
+    13.55,
+    14.4,
+    17.5,
+    21.2,
+    24.9,
+    25.9,
+    28.6,
+    30.6,
+    33.4,
+    35.8,
+    38.2,
+    40.7,
+    43.1,
+    45.7,
+    47.5,
+    49.4,
+    52.0,
+    52.7,
+    53.9,
+    55.6,
+    57.3,
+    59.4,
+    61.6,
+    64.7,
+    66.5,
+    70.0,
+    74.0,
+    76.3,
+    78.5
+  ],
+  "thumb": [
+    270,
+    480
+  ],
+  "cols": 4,
+  "narration": [
+    {
+      "file": "assets/audio/beat-1.mp3",
+      "start": 0.95,
+      "duration": 12.408
+    },
+    {
+      "file": "assets/audio/beat-2.mp3",
+      "start": 13.738,
+      "duration": 11.448
+    },
+    {
+      "file": "assets/audio/beat-3.mp3",
+      "start": 25.566,
+      "duration": 12.384
+    },
+    {
+      "file": "assets/audio/beat-4.mp3",
+      "start": 38.33,
+      "duration": 14.04
+    },
+    {
+      "file": "assets/audio/beat-5.mp3",
+      "start": 52.75,
+      "duration": 12.936
+    },
+    {
+      "file": "assets/audio/beat-6.mp3",
+      "start": 66.066,
+      "duration": 11.688
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "hook-open",
+      "time": 0.7
+    },
+    {
+      "name": "hook-shape",
+      "time": 3.2
+    },
+    {
+      "name": "hook-photo",
+      "time": 6.4
+    },
+    {
+      "name": "promise",
+      "time": 11.4
+    },
+    {
+      "name": "pre-dip",
+      "time": 12.9
+    },
+    {
+      "name": "dip-dark",
+      "time": 13.55
+    },
+    {
+      "name": "tab-in",
+      "time": 14.7
+    },
+    {
+      "name": "tab-arrows",
+      "time": 21.2
+    },
+    {
+      "name": "travel-1",
+      "time": 24.9
+    },
+    {
+      "name": "steer-in",
+      "time": 25.9
+    },
+    {
+      "name": "sliders",
+      "time": 28.8
+    },
+    {
+      "name": "thermo",
+      "time": 33.5
+    },
+    {
+      "name": "star",
+      "time": 36.1
+    },
+    {
+      "name": "travel-2",
+      "time": 38.3
+    },
+    {
+      "name": "feed-photo",
+      "time": 41.0
+    },
+    {
+      "name": "feed-doc",
+      "time": 42.6
+    },
+    {
+      "name": "feed-all",
+      "time": 45.8
+    },
+    {
+      "name": "captions",
+      "time": 49.5
+    },
+    {
+      "name": "travel-3",
+      "time": 52.2
+    },
+    {
+      "name": "build-in",
+      "time": 53.9
+    },
+    {
+      "name": "app-card",
+      "time": 56.2
+    },
+    {
+      "name": "preview",
+      "time": 59.5
+    },
+    {
+      "name": "keypill",
+      "time": 64.8
+    },
+    {
+      "name": "cycle",
+      "time": 66.7
+    },
+    {
+      "name": "rocket",
+      "time": 77.3
+    }
+  ]
+}

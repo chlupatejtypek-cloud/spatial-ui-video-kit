@@ -12,7 +12,7 @@ import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const argv = process.argv.slice(2);
-let revision = process.env.FILM_REV || '007';
+let revision = process.env.FILM_REV || '008';
 const flagIndex = argv.indexOf('--rev');
 if (flagIndex !== -1 && argv[flagIndex + 1]) revision = argv[flagIndex + 1];
 const inline = argv.find(a => a.startsWith('--rev='));

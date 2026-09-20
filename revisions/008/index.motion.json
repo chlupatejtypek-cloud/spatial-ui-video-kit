@@ -1,0 +1,17 @@
+{
+  "duration": 79,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#hook-title", "bySec": 0.2 },
+    { "kind": "appearsBy", "selector": "#hook-photo", "bySec": 6.2 },
+    { "kind": "appearsBy", "selector": "#st-chatbubble", "bySec": 15.2 },
+    { "kind": "appearsBy", "selector": "#st-sliders", "bySec": 26.8 },
+    { "kind": "appearsBy", "selector": "#st-photo", "bySec": 41.1 },
+    { "kind": "appearsBy", "selector": "#st-loop", "bySec": 55.2 },
+    { "kind": "appearsBy", "selector": "#st-rocket", "bySec": 77.0 },
+    { "kind": "before", "a": "#st-photo", "b": "#st-media" },
+    { "kind": "before", "a": "#st-sliders", "b": "#st-star" },
+    { "kind": "before", "a": "#st-loop", "b": "#st-rocket" },
+    { "kind": "staysInFrame", "selector": "#cycle-strip" },
+    { "kind": "keepsMoving", "withinSelector": "#world", "maxStaticSec": 3.4 }
+  ]
+}

@@ -1,0 +1,125 @@
+<div id="root" data-composition-id="motion-008" data-width="1080" data-height="1920" data-duration="79" data-fps="30" data-start="0">
+  <div id="world">
+
+    <!-- A — hook (viewport 540,960): topic-first lockup over the generative shape,
+         real photo (no caption), promise notes, dip to dark. -->
+    <section id="scene-a" data-layout-allow-overflow>
+      <svg id="hook-blob" viewBox="0 0 1080 1920" aria-hidden="true">
+        <defs>
+          <linearGradient id="blob-fill" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4f8cff" stop-opacity=".22"/>
+            <stop offset=".55" stop-color="#2b5cb8" stop-opacity=".12"/>
+            <stop offset="1" stop-color="#16304f" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="blob-stroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#9cc5ff"/>
+            <stop offset="1" stop-color="#4f8cff" stop-opacity=".25"/>
+          </linearGradient>
+        </defs>
+        <g id="blob-spin">
+          <path id="blob-main" d="M 700 420 C 900 380 1060 520 1020 720 C 980 920 1120 1040 1010 1220 C 900 1400 660 1380 560 1220 C 460 1060 560 940 520 780 C 480 620 520 460 700 420 Z" fill="url(#blob-fill)" stroke="url(#blob-stroke)" stroke-width="3"/>
+          <path id="blob-echo" d="M 700 420 C 900 380 1060 520 1020 720 C 980 920 1120 1040 1010 1220 C 900 1400 660 1380 560 1220 C 460 1060 560 940 520 780 C 480 620 520 460 700 420 Z" fill="none" stroke="#7fb2ff" stroke-opacity=".35" stroke-width="1.6" transform="translate(-36,52) scale(.94)"/>
+        </g>
+        <ellipse id="blob-orbit" cx="770" cy="880" rx="430" ry="560" fill="none" stroke="#4f8cff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="3 14"/>
+        <circle id="orbit-dot" r="7" fill="#ffd9a8"/>
+      </svg>
+
+      <div id="hook-lockup">
+        <div id="hook-kicker">free &bull; in every browser</div>
+        <h1 id="hook-title">Google AI Studio</h1>
+        <div id="hook-sub">prompt it &bull; feed it &bull; build on it</div>
+      </div>
+
+      <figure id="hook-photo">
+        <img src="assets/photo/ai-studio-phone.png" width="500" height="281" alt="">
+      </figure>
+
+      <div id="promise-1" class="note retire">what it is</div>
+      <div id="promise-2" class="note retire">what it does</div>
+      <div id="promise-3" class="note retire">what you can build</div>
+    </section>
+
+    <!-- B — cream paper panel (center 2100,960): one browser tab.
+         Ink sketch hero + handwritten annotations with drawn arrows. -->
+    <section id="scene-b" data-layout-allow-overflow>
+      <div id="panel-b" class="paper">
+        <div class="panel-grid"></div>
+        <h1 id="title-b" class="ink-title">One browser tab</h1>
+        <img id="st-chatbubble" class="sketch" src="assets/stickers/chatbubble-ink.png" width="470" height="470" alt="">
+        <svg class="doodles" viewBox="0 0 1560 1960" aria-hidden="true">
+          <path class="draw-ink" d="M 470 700 C 560 730 600 700 640 660" pathLength="1"/>
+          <path class="draw-ink" d="M 1010 470 C 1080 430 1120 430 1150 470" pathLength="1"/>
+        </svg>
+        <div id="lab-talk" class="scribble">talk to Gemini</div>
+        <div id="lab-models" class="scribble">latest models</div>
+        <div class="corner-fold"></div>
+      </div>
+    </section>
+
+    <!-- C — dark board (center 3780,960): steer the model.
+         Chalk sketch hero, paper notes with pin dots, temperature gauge. -->
+    <section id="scene-c" data-layout-allow-overflow>
+      <h1 id="title-c" class="retire">Steer the model</h1>
+      <img id="st-sliders" class="sticker retire" src="assets/stickers/sliders.png" width="470" height="470" alt="">
+      <div id="sys-note" class="note retire"><i class="mini" style="background-image:url(assets/stickers/wand-ink.png)"></i><span>system instruction</span></div>
+      <svg id="thermo" class="retire" viewBox="0 0 200 320" aria-hidden="true">
+        <rect x="84" y="20" width="32" height="230" rx="16" fill="#16304f" stroke="#e9dfc6" stroke-width="3"/>
+        <rect id="thermo-fill" x="90" y="40" width="20" height="200" rx="10" fill="#4f8cff"/>
+        <circle cx="100" cy="268" r="38" fill="#ff7a59" stroke="#e9dfc6" stroke-width="3"/>
+      </svg>
+      <div id="temp-note" class="note retire"><span>creative &harr; precise</span></div>
+      <img id="st-star" class="sticker retire" src="assets/stickers/star.png" width="340" height="340" alt="">
+      <div id="star-note" class="note retire"><span>deep thinking</span></div>
+    </section>
+
+    <!-- D — big cream paper (center 2100,2900): feed it anything.
+         Ink sketches on paper, a document that draws itself, arc layout. -->
+    <section id="scene-d" data-layout-allow-overflow>
+      <div id="panel-d" class="paper">
+        <div class="panel-grid"></div>
+        <h1 id="title-d" class="ink-title retire">Feed it anything</h1>
+        <img id="st-photo" class="sketch retire" src="assets/stickers/photo-ink.png" width="430" height="430" alt="">
+        <img id="st-media" class="sketch retire" src="assets/stickers/media-ink.png" width="430" height="430" alt="">
+        <svg id="doc-doodle" class="retire" viewBox="0 0 500 560" aria-hidden="true">
+          <path class="draw-ink big" d="M 120 60 L 330 60 L 395 125 L 395 500 L 120 500 Z" pathLength="1"/>
+          <path class="draw-ink big" d="M 330 60 L 330 125 L 395 125" pathLength="1"/>
+          <path class="draw-ink big" d="M 160 200 L 355 200" pathLength="1"/>
+          <path class="draw-ink big" d="M 160 260 L 355 260" pathLength="1"/>
+          <path class="draw-ink big" d="M 160 320 L 300 320" pathLength="1"/>
+          <path class="draw-ink big" d="M 160 380 L 340 380" pathLength="1"/>
+        </svg>
+        <svg class="doodles" viewBox="0 0 1900 2300" aria-hidden="true">
+          <path class="draw-ink" d="M 700 480 C 640 500 600 520 570 550" pathLength="1"/>
+          <path class="draw-ink" d="M 1150 1120 C 1090 1140 1060 1160 1030 1190" pathLength="1"/>
+          <path class="draw-ink" d="M 480 1380 C 520 1330 550 1300 590 1270" pathLength="1"/>
+        </svg>
+        <div id="lab-shot" class="scribble retire">a screenshot<br>becomes a summary</div>
+        <div id="lab-meet" class="scribble retire">a meeting<br>becomes notes</div>
+        <div id="lab-data" class="scribble retire">receipts become<br>clean data</div>
+        <div class="corner-fold"></div>
+      </div>
+    </section>
+
+    <!-- E — dark board with a cream app card (center 3780,2900): build with words. -->
+    <section id="scene-e" data-layout-allow-overflow>
+      <h1 id="title-e">Build with words</h1>
+      <img id="st-loop" class="sticker" src="assets/stickers/wand.png" width="470" height="470" alt="">
+      <div id="app-card">
+        <div class="panel-grid"></div>
+        <img id="st-app" class="sketch" src="assets/stickers/app-ink.png" width="280" height="280" alt="">
+        <div id="code-block">
+          <i id="code-l1"></i><i id="code-l2"></i><i id="code-l3"></i>
+        </div>
+      </div>
+      <div id="glow"></div>
+      <div id="key-note" class="note"><i class="mini" style="background-image:url(assets/stickers/key-ink.png)"></i><span>your code, your key</span></div>
+      <div id="cycle-strip" class="tape">
+        <span>prompt</span><i>&rarr;</i><span>feed</span><i>&rarr;</i><span>build</span>
+      </div>
+      <img id="st-rocket" class="sticker" src="assets/stickers/rocket.png" width="180" height="180" alt="">
+    </section>
+
+  </div>
+  <div id="vignette"></div>
+  <div id="dip"></div>
+</div>

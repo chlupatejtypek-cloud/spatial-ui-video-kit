@@ -1,29 +1,36 @@
-# Sticker style — locked
+# Sticker style — locked (v2: field-notes sketch, owner-approved)
 
-All sticker art in this project follows one style so every new film stays coherent. This is a hard style guide for any future image generation.
+Owner replaced the die-cut cartoon style with a **pencil-sketch style** (reference: blue-graphite
+anatomy construction sketch on cream paper). Hard style guide for every future generation.
 
-## The style (generated with one shared prompt template)
+## The style (one shared prompt template)
 
-> Flat vector die-cut sticker of **{subject}**. Thick smooth cream outline (#F7F2E6) around the entire silhouette. Semi-flat shading, two tones per surface, one soft highlight. Palette: royal blue #4F8CFF, sky blue #9CC5FF, deep navy #16304F, cream #F7F2E6, small coral accent #FF7A59. Modern friendly SaaS illustration style. No text. Centered, fills 80% of the square. Isolated on a uniform pure green #00FF00 background, flat color only, no shadows, no gradients, no vignette.
+> Antique field-notes construction sketch of **{subject}**: expressive blue-graphite pencil
+> lines, loose cross-hatching, a few stray construction and measure strokes around the subject,
+> drawn on warm aged cream paper. Confident dark strokes, high contrast against the paper.
+> No text, no letters, no numbers, no watermark. Subject centered, fills ~70% of the square.
+> Even flat lighting, no shadows, no vignette, straight-on scan.
 
-Only `{subject}` changes. Never drop the outline, palette or background sentences — they carry the coherence.
+Only `{subject}` changes. Never drop the paper, hatching or no-text sentences.
 
-## Pipeline
+## Pipeline (luminance → alpha, NOT green-key)
 
-1. Generate into `revisions/<id>/stickers-src/raw-<n>-<name>.png` (green background).
-2. Key out the green: `ffmpeg -i raw.png -vf "colorkey=0x00FF00:0.26:0.10,despill=type=green,format=rgba" stickers/<name>.png`.
-3. Normalize to 640×640 (hero size ceiling — the film renders stickers at ≤470 px).
-4. Verify: alpha channel must have `min === 0` (really transparent) and the contact sheet must look like one family.
-5. `stickers-src/` is scratch — delete it before committing; keep only keyed PNGs and their contact sheet.
+1. Generate into `revisions/<id>/stickers-src/raw-<n>-<name>.png` (cream paper).
+2. **Line version** (for the dark board): alpha = darkness of each pixel
+   (`a = clamp(((1 − L) − 0.10) / 0.55)`), tint everything to light chalk-blue `#bcd6f4`.
+   Done with a sharp raw-pixel pass — the paper disappears completely, only strokes remain.
+3. **Paper plate version** (for cream panels): the raw scan as-is, rounded corners via CSS.
+4. Verify: line version must have `alphaMin === 0` (really transparent) and the contact sheet
+   must read as one sketchbook; paper plates keep the paper tone uniform.
+5. `stickers-src/` is scratch — delete it **only after** the keyed outputs are verified.
 
 ## Budget rules (owner's instruction)
 
-- **Maximum 10 new stickers per session.** Plan the set before generating; reuse existing stickers (mini versions as pill icons) before making new ones.
-- **Old stickers must be deleted** when a revision supersedes them: a revision's `stickers-src/` always goes; keyed stickers from abandoned revisions go with the revision. The active revision keeps exactly the stickers it uses — no private museum.
-- The current committed set (10/10 used this session): key, app, shield, server, check, database, padlock, rotate, warning, rocket.
+- **Maximum 10 new stickers per revision batch.** Reuse minis (CSS `background-image`) before
+  making new ones. Old-style stickers are deleted the moment a new style is locked.
 
 ## Usage rules in films
 
-- Stickers are the story; text pills only label them. One hero sticker per beat.
-- Stickers pop (`back.out`) exactly on the narration beat that names them; pulses are small (≤1.12) and rare.
-- Die-cut outline + `drop-shadow` seats them on the dark board — never place them on light panels.
+- Stickers are the story; text pills only label them. One hero sticker per beat, centered.
+- Stickers pop exactly on the narration beat that names them; pulses are small and rare.
+- On the dark board use line versions with a soft drop-shadow; on cream panels use paper plates.
