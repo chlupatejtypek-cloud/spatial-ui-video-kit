@@ -42,3 +42,12 @@ Switch revisions with `--rev` / `FILM_REV` (see README). Read `docs/AGENT_GUIDE.
 | `VIDEO_STYLE.md` | Standing user style preferences — apply to every new film |
 
 UI content shown in the films is illustrative. Do not add branding, scene numbers, slogans or editor chrome — the owner removed them on purpose.
+
+## Session protocol (owner, hard rule)
+
+1. **Intro first.** When (re)building a film: generate ONLY the intro (hook), polish it with
+   the owner until explicitly approved, then continue with the rest. Never render a full film
+   on an unapproved hook.
+2. **Style constants (do not relitigate):** die-cut stickers (sketch style rejected), dark
+   navy board (white/paper panels rejected), cross-fade transitions, camera almost always
+   moving, no silent tail, "60-second explainer" banned.

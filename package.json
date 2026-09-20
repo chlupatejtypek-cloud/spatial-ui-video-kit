@@ -5,8 +5,8 @@
     "build": "node scripts/build-film.mjs",
     "test": "node scripts/test-film.mjs",
     "hf": "node scripts/hf.mjs",
-    "check": "npm run build && node scripts/hf.mjs check revisions/008/composition",
-    "render": "npm run build && node scripts/hf.mjs render revisions/008/composition --quality delivery --fps 30 --workers 1 --output exports/google-ai-studio.mp4"
+    "check": "npm run build && node scripts/hf.mjs check revisions/009/composition",
+    "render": "npm run build && node scripts/hf.mjs render revisions/009/composition --quality delivery --fps 30 --workers 1 --output exports/google-ai-studio.mp4"
   },
   "keywords": [],
   "author": "",

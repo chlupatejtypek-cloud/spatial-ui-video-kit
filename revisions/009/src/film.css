@@ -1,0 +1,80 @@
+/* Google AI Studio — rev 009 "polish cut".
+   Dark navy board everywhere (owner rejected paper/white), die-cut stickers (sketch rejected).
+   Tags: dark navy, small radius, pin dot, mono type — the single label style.
+   Geometry recomputed so every element sits centered in its viewport at every camera zoom. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+body{font-family:'Inter',system-ui,sans-serif;color:#f2ecdd;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+#world{position:absolute;left:0;top:0;width:4600px;height:3600px;transform-origin:0 0;background-color:#0a1120;background-image:radial-gradient(circle,#1c2b49 1.6px,transparent 1.7px);background-size:48px 48px}
+#world section{position:absolute;left:0;top:0;width:4600px;height:3600px;pointer-events:none}
+#vignette{position:absolute;left:0;top:0;width:1080px;height:1920px;background:radial-gradient(ellipse 120% 90% at 50% 42%,transparent 55%,rgba(4,8,18,.55) 100%)}
+#dip{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#04070f;opacity:0}
+
+h1{position:absolute;top:170px;width:900px;font-size:64px;font-weight:700;letter-spacing:-1px;text-align:center;color:#f2ecdd;opacity:0}
+.sticker{position:absolute;opacity:0;filter:drop-shadow(0 22px 30px rgba(0,0,0,.5))}
+
+/* dark navy tag — the one label style of this film */
+.tag{position:absolute;display:flex;align-items:center;gap:16px;height:78px;padding:0 28px 0 46px;background:rgba(19,42,74,.92);border:1.5px solid rgba(127,178,255,.45);border-radius:10px;box-shadow:0 14px 34px rgba(0,0,0,.45);color:#e8f0fb;font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;opacity:0}
+.tag::before{content:'';position:absolute;left:16px;top:50%;transform:translateY(-50%);width:11px;height:11px;border-radius:50%;background:#ff7a59}
+.tag .mini{display:block;width:42px;height:42px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));flex:none}
+.tag-s{height:64px;font-size:23px;padding:0 22px 0 40px}
+.cycle{justify-content:center;gap:14px;font-size:30px;font-weight:700}
+.cycle i{font-style:normal;color:#7fb2ff}
+
+/* navy cards — the one panel variation, same family, barely tilted */
+.card{position:absolute;left:160px;display:flex;align-items:center;gap:36px;width:760px;height:260px;padding:0 34px;background:rgba(19,42,74,.88);border:1.5px solid rgba(127,178,255,.4);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.5);opacity:0}
+.card-sticker{filter:drop-shadow(0 14px 22px rgba(0,0,0,.5));flex:none}
+.card-text{font-family:'IBM Plex Mono',monospace;font-size:29px;font-weight:600;color:#e8f0fb}
+.card-text i{font-style:normal;color:#7fb2ff}
+
+/* hook + tab board — viewport A (540,960) */
+#hook-blob{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}
+#blob-main{filter:drop-shadow(0 0 46px rgba(79,140,255,.3))}
+#orbit-dot{opacity:1}
+#hook-lockup{position:absolute;left:40px;top:330px;width:1000px;text-align:center}
+#hook-kicker{display:inline-block;font-size:24px;font-weight:600;letter-spacing:7px;text-transform:uppercase;color:#7fb2ff;padding-bottom:10px}
+#hook-kicker::after{content:'';display:block;width:64px;height:3px;border-radius:2px;background:#4f8cff;margin:16px auto 0}
+#hook-title{opacity:1;position:static;width:auto;font-size:112px;font-weight:800;letter-spacing:-3px;line-height:1.04;margin-top:26px;
+  background:linear-gradient(180deg,#f4f8ff 20%,#9cc5ff 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#hook-sub{margin-top:30px;font-size:31px;color:#9db4d8;letter-spacing:.5px}
+#hook-photo{position:absolute;left:290px;top:960px;width:500px;margin:0;opacity:0}
+#hook-photo img{display:block;width:500px;height:auto;border-radius:14px;border:2px solid rgba(127,178,255,.4);box-shadow:0 34px 90px rgba(79,140,255,.28),0 10px 30px rgba(0,0,0,.6)}
+#promise-1{left:150px;top:1500px;width:250px}
+#promise-2{left:420px;top:1500px;width:240px}
+#promise-3{left:665px;top:1500px;width:345px}
+#board-a{position:absolute;left:0;top:0;width:2400px;height:2100px}
+#title-tab{left:90px;top:200px;font-size:70px}
+#board-a #st-chatbubble{left:305px;top:555px}
+#tag-talk{left:310px;top:1071px;width:460px}
+#tag-models{left:310px;top:1180px;width:460px}
+
+/* B — steer the model (center 1620,960) */
+#title-b{left:1170px;top:230px}
+#st-sliders{left:1385px;top:555px}
+#tag-sys{left:1390px;top:1071px;width:460px}
+#st-thinking{left:1190px;top:1230px}
+#tag-deep{left:1250px;top:1581px;width:300px}
+#thermo{position:absolute;left:1740px;top:1190px;width:200px;height:320px;opacity:0}
+#tag-temp{left:1690px;top:1581px;width:300px}
+
+/* C — feed it anything (center 540,2640) */
+#title-c{left:90px;top:2270px}
+#card-1{top:2440px}
+#card-2{top:2740px}
+#card-3{top:3040px}
+
+/* D — build with words (center 1620,2640) */
+#title-d{left:1170px;top:2240px}
+#st-loop{left:1205px;top:2325px}
+#app-card{position:absolute;left:1695px;top:2740px;width:380px;height:420px;background:rgba(19,42,74,.92);border:1.5px solid rgba(127,178,255,.45);border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.5);opacity:0}
+#st-app{left:70px;top:40px;filter:none}
+#code-block{position:absolute;left:40px;top:245px;width:300px;height:150px;display:flex;flex-direction:column;gap:18px}
+#code-block i{display:block;height:10px;border-radius:4px;background:#7fb2ff;transform-origin:0 50%}
+#code-l1{width:100%}
+#code-l2{width:70%}
+#code-l3{width:85%}
+#glow{position:absolute;left:1685px;top:2730px;width:400px;height:440px;border-radius:20px;box-shadow:0 0 110px 36px rgba(79,140,255,.38);opacity:0}
+#tag-key{left:1725px;top:3191px;width:320px}
+#cycle-strip{left:1180px;top:3346px;width:520px}
+#st-rocket{left:1810px;top:2410px}

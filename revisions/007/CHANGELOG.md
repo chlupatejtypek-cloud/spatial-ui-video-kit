@@ -18,3 +18,9 @@
 - Field-note tags (paper rectangle + pin dot, IBM Plex Mono) replace heavily rounded pills.
 - Hook photo caption removed; film cut to 78.9 s — narration no longer followed by silence.
 - New sticker style locked: pencil-sketch field-notes lines, chalk-blue on dark / ink-navy on paper (luminance keying). Document replaced by a self-drawing SVG.
+
+## 009 — polish cut (owner rebuild)
+- Sketch stickers + paper panels retired forever (owner verdict); die-cut + dark navy restored.
+- Geometry recomputed around viewport centers; layout check at all zoom positions.
+- Navy tags + navy cards as the single label/panel language; cross-fades back; near-constant camera; no silent tail.
+- New session protocol (AGENTS.md): intro first, owner-approved, then the rest.

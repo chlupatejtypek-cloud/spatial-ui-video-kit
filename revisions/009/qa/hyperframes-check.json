@@ -4,26 +4,9 @@
   "lint": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 1,
+    "warningCount": 0,
     "infoCount": 0,
-    "findings": [
-      {
-        "code": "composition_file_too_large",
-        "severity": "warning",
-        "message": "This HTML composition file has 345 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {},
-        "sourceFile": "/home/user/blackboard-motion/revisions/008/composition/index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 0,
-          "height": 0
-        },
-        "time": 0,
-        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
-      }
-    ],
+    "findings": [],
     "filesScanned": 1
   },
   "runtime": {
@@ -41,15 +24,10 @@
     "findings": [],
     "duration": 79,
     "samples": [
-      0.7,
-      13.55,
-      21.2,
-      33.5,
-      42.6,
-      45.8,
-      52.2,
+      11.4,
       56.2,
       59.5,
+      64.8,
       66.7,
       77.3
     ],
@@ -66,7 +44,7 @@
     "infoCount": 0,
     "findings": [],
     "enabled": true,
-    "specPath": "/home/user/blackboard-motion/revisions/008/composition/index.motion.json",
+    "specPath": "/home/user/blackboard-motion/revisions/009/composition/index.motion.json",
     "samples": 300
   },
   "contrast": {
@@ -77,14 +55,14 @@
     "findings": [],
     "enabled": true,
     "samples": [
-      0.7,
-      21.2,
-      45.8,
+      11.4,
       56.2,
+      59.5,
+      64.8,
       77.3
     ],
-    "checked": 13,
-    "passed": 13
+    "checked": 17,
+    "passed": 17
   },
   "hdr": {
     "autoPromotion": null,

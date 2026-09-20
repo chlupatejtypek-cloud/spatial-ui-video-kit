@@ -1,0 +1,37 @@
+{
+  "version": "009",
+  "title": "Google AI Studio \u2014 polish cut",
+  "file": "exports/google-ai-studio.mp4",
+  "sha256": "7227609482e755b0f8842c124d810f452cef04ca6d94b9daa35297591c6b932c",
+  "format": {
+    "container": "mp4",
+    "video": "h264 yuv420p 1080x1920 30fps 2370 frames (CRF 27 slow transcode)",
+    "audio": "aac 48000 Hz stereo",
+    "durationSeconds": 79.0,
+    "bytes": 5803207
+  },
+  "ownerVerdictApplied": {
+    "008_rejected": "sketch stickers + paper/white panels retired forever",
+    "geometry": "recomputed around the four viewport centers; card children fixed to card-relative coords",
+    "motion": "cross-fade grammar + camera almost always moving; ends on the launch push; no silent tail",
+    "style": "dark navy board, die-cut stickers, navy tags (pin dot) as the single label language, navy cards at the feed station"
+  },
+  "narration": {
+    "beats": 6,
+    "audio": "reused",
+    "voice": "session voice; Fish regeneration pending credit"
+  },
+  "qa": {
+    "lint": "0/0",
+    "browserChecks": "6 passed",
+    "hyperframesCheck": "PASS zero warnings (motion 300, layout 31x, contrast)",
+    "artifactVerification": "ffprobe + 10 decoded frames match page seeks; app-card children verified visible"
+  },
+  "fixesDuringQA": [
+    "#st-app/#code-block were positioned in world coords inside the card (off-screen) -> card-relative",
+    "promise-3 width +35px (no wrap)",
+    "loop spin pivot transformOrigin (was svgOrigin on img)",
+    "9 tween-boundary gaps"
+  ],
+  "workflowRule": "intro first, owner-approved, then the rest (AGENTS.md Session protocol)"
+}
