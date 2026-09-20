@@ -1,0 +1,12 @@
+{
+  "voice": null,
+  "note": "Texts of revision 005. Generated with the fallback pipeline voice at atempo 1.12 (Fish Audio key had no API credit at authoring time). Re-generate with scripts/narrate-fish.mjs once credit is available, then re-measure and update film.config.json.",
+  "beats": [
+    { "id": "beat-1", "text": "Every day, your apps quietly send secret passwords across the internet, and no, not yours. They are called API keys, and in the next minute you will know exactly what they are, how they work, and how they leak." },
+    { "id": "beat-2", "text": "An API key is a tiny string with two jobs baked in: it says who is asking, and it caps what that caller may do. A name tag and a room key, pressed into one." },
+    { "id": "beat-3", "text": "Your app calls an API, the key rides along in the header, the server checks it is real and allowed, and then the door opens and your data flows back." },
+    { "id": "beat-4", "text": "Keeping a key safe is boring on purpose. Never push one into a repository, give it the smallest scope that works, and rotate it before it grows old enough to leak." },
+    { "id": "beat-5", "text": "And when one leaks, and someday one will, you revoke it, issue a fresh key, update the app, and you are back before anyone notices." },
+    { "id": "beat-6", "text": "Identify. Verify. Protect. That is the entire game, so now go build something." }
+  ]
+}

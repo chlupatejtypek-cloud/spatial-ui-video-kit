@@ -1,0 +1,68 @@
+<div id="root" data-composition-id="motion-002" data-width="1920" data-height="1080" data-duration="24" data-fps="30" data-start="0">
+  <div id="grid" aria-hidden="true"></div>
+  <div id="camera-rig"><div id="camera-zoom"><div id="world" data-layout-allow-overflow>
+
+    <article id="project-panel" class="surface" aria-label="Website refresh project">
+      <div class="project-content">
+        <h1>Website refresh</h1>
+        <div class="project-progress-label"><span>2 of 3 complete</span><span>67%</span></div>
+        <div class="project-progress-track"><i></i></div>
+        <div class="completed-task task-one"><span class="quiet-check">{{icon:check}}</span><span>Design system</span></div>
+        <div class="completed-task task-two"><span class="quiet-check">{{icon:check}}</span><span>Responsive layout</span></div>
+      </div>
+    </article>
+
+    <!-- The selected row is in world space from the start: extracting it never swaps DOM or jumps. -->
+    <article id="focus-card" class="surface">
+      <div id="focus-icon">{{icon:activity}}</div>
+      <h2 id="focus-label">Performance</h2>
+      <span id="focus-caption">Needs review</span>
+      <span id="focus-arrow">{{icon:arrow}}</span>
+      <div id="focus-score"><strong>68</strong><span>/ 100</span></div>
+    </article>
+
+    <svg id="connections" viewBox="0 0 3800 2100" fill="none" aria-hidden="true" data-layout-ignore>
+      <path class="wire-bed" d="M1840 1010 C2005 1010 1995 1115 2160 1115"/>
+      <path class="wire-bed" d="M2460 1115 C2675 1115 2680 940 2850 940"/>
+      <path id="wire-one" class="signal-wire" pathLength="1" d="M1840 1010 C2005 1010 1995 1115 2160 1115"/>
+      <path id="wire-two" class="signal-wire" pathLength="1" d="M2460 1115 C2675 1115 2680 940 2850 940"/>
+      <circle id="signal-one" r="5" cx="0" cy="0" fill="#c7e6a7"/>
+      <circle id="signal-two" r="5" cx="0" cy="0" fill="#c7e6a7"/>
+    </svg>
+
+    <article id="optimize-card" class="surface">
+      <div class="optimize-icon">{{icon:sliders}}</div>
+      <h2>Optimize</h2>
+      <div class="optimize-progress"><i id="optimize-progress-fill"></i></div>
+    </article>
+
+    <!-- One surface: verification tile → chart → compact result. -->
+    <article id="insight-surface" class="surface" data-layout-allow-overflow>
+      <div id="verify-content">
+        <svg class="verify-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#57684a" stroke-width="1.5"/><path id="verify-check" d="M20 32 28 40 45 23" fill="none" stroke="#c7e6a7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/></svg>
+        <h2>Verify</h2>
+      </div>
+      <div id="chart-content" data-layout-allow-overflow>
+        <h2 id="chart-heading">Performance</h2>
+        <div id="chart-grid">
+          <span class="axis-y axis-top">100</span><span class="axis-y axis-mid">80</span><span class="axis-y axis-low">60</span>
+          <span class="axis-x axis-before">Before</span><span class="axis-x axis-now">Now</span>
+          <svg viewBox="0 0 1270 660" aria-hidden="true"><path d="M132 136H1140M132 326H1140M132 516H1140" fill="none" stroke="#536149" stroke-width="1" stroke-opacity=".52" stroke-dasharray="3 10"/></svg>
+        </div>
+        <svg id="chart-svg" viewBox="0 0 1270 660" role="img" aria-label="Performance score gradually improves from 68 to 98">
+          <path id="chart-line" d="M132 440 C203 440 218 406 284 406 S368 373 442 373 S539 337 601 337 S702 275 771 275 S876 210 940 210 S1042 155 1104 155" pathLength="1" fill="none" stroke="#c7e6a7" stroke-width="3" stroke-linecap="butt"/>
+          <circle id="chart-tip" cx="0" cy="0" r="5.5" fill="#c7e6a7"/>
+        </svg>
+        <div id="chart-value"><strong>98</strong><span>/ 100</span></div>
+      </div>
+      <div id="ready-content"><h2>Ready to launch</h2><p>Website refresh</p></div>
+    </article>
+
+    <!-- Exact endpoint match at the handoff; independent of the retiring chart surface. -->
+    <svg id="result-mark" viewBox="0 0 128 128" aria-hidden="true" data-layout-ignore>
+      <circle id="result-circle" cx="64" cy="64" r="5.5" fill="#c7e6a7" fill-opacity="1" stroke="#c7e6a7" stroke-width="1.8" stroke-opacity="0"/>
+      <path id="result-check" d="M43 64 58 79 87 49" fill="none" stroke="#c7e6a7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
+    </svg>
+
+  </div></div></div>
+</div>

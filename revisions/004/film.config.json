@@ -1,0 +1,185 @@
+{
+  "id": "004",
+  "compositionId": "motion-004",
+  "timelineKey": "motion-004",
+  "name": "api-keys-sticker-story",
+  "title": "API keys \u2014 sticker story",
+  "description": "Sticker-style narrated explainer: a coherent die-cut sticker set pops onto the board exactly in sync with nine narration beats; the camera travels A-B-C-D across one shared world and never returns, so no stale UI is ever seen again.",
+  "width": 1080,
+  "height": 1920,
+  "duration": 57,
+  "fps": 30,
+  "output": "exports/api-keys-sticker-story.mp4",
+  "brandScan": [
+    "blackboard",
+    "noda",
+    "hyperframes",
+    "workspace",
+    "compound effect",
+    "workflow"
+  ],
+  "frameZero": [
+    "#title-a"
+  ],
+  "signatureIds": [
+    "world",
+    "title-a",
+    "st-key",
+    "chip-who",
+    "chip-what",
+    "title-b",
+    "st-app",
+    "key-header",
+    "st-server",
+    "st-check",
+    "st-database",
+    "title-c",
+    "rule-1",
+    "rule-2",
+    "rule-3",
+    "title-d",
+    "st-warning",
+    "act-1",
+    "act-2",
+    "act-3",
+    "cycle-pill",
+    "st-rocket"
+  ],
+  "seekTimes": [
+    1.0,
+    4.5,
+    8.4,
+    10.1,
+    13.7,
+    15.8,
+    19.4,
+    21.5,
+    27.5,
+    31.2,
+    36.5,
+    41.9,
+    44.1,
+    47.3,
+    51.2,
+    55
+  ],
+  "thumb": [
+    270,
+    480
+  ],
+  "cols": 5,
+  "narration": [
+    {
+      "file": "assets/audio/beat-1.mp3",
+      "start": 0.9,
+      "duration": 5.56,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-2.mp3",
+      "start": 7.066,
+      "duration": 5.08,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-3.mp3",
+      "start": 12.752,
+      "duration": 4.908,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-4.mp3",
+      "start": 18.27,
+      "duration": 5.268,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-5.mp3",
+      "start": 24.148,
+      "duration": 4.96,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-6.mp3",
+      "start": 29.714,
+      "duration": 4.788,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-7.mp3",
+      "start": 35.112,
+      "duration": 5.12,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-8.mp3",
+      "start": 40.846,
+      "duration": 4.908,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-9.mp3",
+      "start": 46.364,
+      "duration": 6.04,
+      "track": 2
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "title",
+      "time": 0.6
+    },
+    {
+      "name": "identity",
+      "time": 10.5
+    },
+    {
+      "name": "flow-app",
+      "time": 14.2
+    },
+    {
+      "name": "flow-key",
+      "time": 16.4
+    },
+    {
+      "name": "flow-check",
+      "time": 21.6
+    },
+    {
+      "name": "flow-data",
+      "time": 28
+    },
+    {
+      "name": "rule-1",
+      "time": 31.6
+    },
+    {
+      "name": "rule-2",
+      "time": 37
+    },
+    {
+      "name": "rule-3",
+      "time": 39
+    },
+    {
+      "name": "leak",
+      "time": 42.3
+    },
+    {
+      "name": "actions",
+      "time": 45.5
+    },
+    {
+      "name": "cycle",
+      "time": 47.6
+    },
+    {
+      "name": "rocket",
+      "time": 51.5
+    },
+    {
+      "name": "end",
+      "time": 56
+    }
+  ]
+}

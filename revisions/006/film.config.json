@@ -1,0 +1,198 @@
+{
+  "id": "006",
+  "compositionId": "motion-006",
+  "timelineKey": "motion-006",
+  "name": "api-keys-crossfade-cut",
+  "title": "API keys \u2014 cross-fade cut",
+  "description": "The cross-fade cut: scenes dissolve into each other with overlapping fades and one continuous camera path \u2014 no hard cuts, no dip-to-dark; the hook, beat-sync and ambient motion from 005 are preserved.",
+  "width": 1080,
+  "height": 1920,
+  "duration": 64,
+  "fps": 30,
+  "output": "exports/api-keys-crossfade-cut.mp4",
+  "brandScan": [
+    "blackboard",
+    "noda",
+    "hyperframes",
+    "workspace",
+    "compound effect",
+    "workflow"
+  ],
+  "frameZero": [
+    "#hook-kicker",
+    "#hook-title"
+  ],
+  "signatureIds": [
+    "world",
+    "dip",
+    "hook-lockup",
+    "hook-photo",
+    "hook-title",
+    "blob-main",
+    "st-key",
+    "promise-1",
+    "promise-2",
+    "promise-3",
+    "chip-who",
+    "chip-what",
+    "title-b",
+    "st-app",
+    "key-header",
+    "st-server",
+    "st-check",
+    "st-database",
+    "pkt-a",
+    "pkt-b",
+    "title-c",
+    "rule-1",
+    "rule-2",
+    "rule-3",
+    "boring",
+    "title-d",
+    "st-warning",
+    "leak-pill",
+    "act-1",
+    "act-2",
+    "act-3",
+    "cycle-pill",
+    "st-rocket"
+  ],
+  "seekTimes": [
+    0.7,
+    5.4,
+    8.6,
+    11,
+    13.3,
+    13.7,
+    13.95,
+    14.3,
+    14.6,
+    17.8,
+    21,
+    24.9,
+    26.5,
+    28,
+    31,
+    33,
+    34.9,
+    35.3,
+    37,
+    43.2,
+    44.55,
+    45.4,
+    47.6,
+    51,
+    55.4,
+    60.5,
+    63.5
+  ],
+  "thumb": [
+    270,
+    480
+  ],
+  "cols": 4,
+  "narration": [
+    {
+      "file": "assets/audio/beat-1.mp3",
+      "start": 0.95,
+      "duration": 13.4,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-2.mp3",
+      "start": 14.794,
+      "duration": 10.19,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-3.mp3",
+      "start": 25.422,
+      "duration": 8.62,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-4.mp3",
+      "start": 34.49,
+      "duration": 9.76,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-5.mp3",
+      "start": 44.686,
+      "duration": 8.51,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-6.mp3",
+      "start": 53.634,
+      "duration": 7.21,
+      "track": 2
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "hook-open",
+      "time": 0.7
+    },
+    {
+      "name": "hook-shape",
+      "time": 3.2
+    },
+    {
+      "name": "hook-photo",
+      "time": 6.4
+    },
+    {
+      "name": "promise",
+      "time": 11.2
+    },
+    {
+      "name": "dip-dark",
+      "time": 13.95
+    },
+    {
+      "name": "presentation-in",
+      "time": 14.75
+    },
+    {
+      "name": "identity",
+      "time": 19.8
+    },
+    {
+      "name": "dissolve-1",
+      "time": 24.9
+    },
+    {
+      "name": "flow-check",
+      "time": 31.1
+    },
+    {
+      "name": "dissolve-2",
+      "time": 35.0
+    },
+    {
+      "name": "rules-all",
+      "time": 43.2
+    },
+    {
+      "name": "zoom-apex",
+      "time": 44.55
+    },
+    {
+      "name": "leak",
+      "time": 46.4
+    },
+    {
+      "name": "recover",
+      "time": 50.7
+    },
+    {
+      "name": "cycle",
+      "time": 55.4
+    },
+    {
+      "name": "rocket",
+      "time": 60.4
+    }
+  ]
+}

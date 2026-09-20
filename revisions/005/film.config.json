@@ -1,0 +1,200 @@
+{
+  "id": "005",
+  "compositionId": "motion-005",
+  "timelineKey": "motion-005",
+  "name": "api-keys-hook-cut",
+  "title": "API keys \u2014 hook cut",
+  "description": "Faster-paced narrated cut: cold-open hook over a blurred living world (never an empty stage), blur-as-focus, varied transitions (fast pan, dip-to-dark swap, zoom punch), ambient packet motion instead of one element after another.",
+  "width": 1080,
+  "height": 1920,
+  "duration": 64,
+  "fps": 30,
+  "output": "exports/api-keys-hook-cut.mp4",
+  "brandScan": [
+    "blackboard",
+    "noda",
+    "hyperframes",
+    "workspace",
+    "compound effect",
+    "workflow"
+  ],
+  "frameZero": [
+    "#title-a",
+    "#ghost-app"
+  ],
+  "signatureIds": [
+    "world",
+    "dip",
+    "title-a",
+    "sub-a",
+    "ghosts",
+    "st-key",
+    "promise-1",
+    "promise-2",
+    "promise-3",
+    "chip-who",
+    "chip-what",
+    "title-b",
+    "st-app",
+    "key-header",
+    "st-server",
+    "st-check",
+    "st-database",
+    "pkt-a",
+    "pkt-b",
+    "title-c",
+    "rule-1",
+    "rule-2",
+    "rule-3",
+    "boring",
+    "title-d",
+    "st-warning",
+    "leak-pill",
+    "act-1",
+    "act-2",
+    "act-3",
+    "cycle-pill",
+    "st-rocket"
+  ],
+  "seekTimes": [
+    1,
+    5.2,
+    10.5,
+    13.4,
+    17.8,
+    21,
+    24.9,
+    26.5,
+    28,
+    29.6,
+    31,
+    33,
+    34.5,
+    34.68,
+    35.2,
+    37,
+    40.2,
+    42.5,
+    44.5,
+    44.72,
+    45.9,
+    47.6,
+    49.2,
+    50.5,
+    52,
+    54.2,
+    56,
+    59.2,
+    60.5,
+    63.5
+  ],
+  "thumb": [
+    270,
+    480
+  ],
+  "cols": 4,
+  "narration": [
+    {
+      "file": "assets/audio/beat-1.mp3",
+      "start": 0.95,
+      "duration": 13.4,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-2.mp3",
+      "start": 14.794,
+      "duration": 10.19,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-3.mp3",
+      "start": 25.422,
+      "duration": 8.62,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-4.mp3",
+      "start": 34.49,
+      "duration": 9.76,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-5.mp3",
+      "start": 44.686,
+      "duration": 8.51,
+      "track": 2
+    },
+    {
+      "file": "assets/audio/beat-6.mp3",
+      "start": 53.634,
+      "duration": 7.21,
+      "track": 2
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "hook-open",
+      "time": 0.7
+    },
+    {
+      "name": "hook-key",
+      "time": 6.2
+    },
+    {
+      "name": "promise",
+      "time": 11.2
+    },
+    {
+      "name": "identity",
+      "time": 19.8
+    },
+    {
+      "name": "flow-app",
+      "time": 26.3
+    },
+    {
+      "name": "flow-key",
+      "time": 28.1
+    },
+    {
+      "name": "flow-check",
+      "time": 31.1
+    },
+    {
+      "name": "flow-data",
+      "time": 33.5
+    },
+    {
+      "name": "dip",
+      "time": 34.66
+    },
+    {
+      "name": "rules-1",
+      "time": 36.6
+    },
+    {
+      "name": "rules-all",
+      "time": 43.2
+    },
+    {
+      "name": "punch",
+      "time": 44.55
+    },
+    {
+      "name": "leak",
+      "time": 46.4
+    },
+    {
+      "name": "recover",
+      "time": 50.7
+    },
+    {
+      "name": "cycle",
+      "time": 55.4
+    },
+    {
+      "name": "rocket",
+      "time": 60.4
+    }
+  ]
+}

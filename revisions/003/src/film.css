@@ -1,0 +1,59 @@
+/* API keys explained — portrait 1080x1920, shared blue world 2400x2100.
+   Initial hidden/dashed states live here so frame zero is exact. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+body{font-family:'Inter',system-ui,sans-serif;color:#e8eefb;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+#world{position:absolute;left:0;top:0;width:2400px;height:2100px;transform-origin:0 0;background-color:#0a1120;background-image:radial-gradient(circle,#1a2947 1.5px,transparent 1.6px);background-size:46px 46px}
+#world section{position:absolute;left:0;top:0;width:2400px;height:2100px;pointer-events:none}
+h1{position:absolute;top:236px;width:840px;font-size:58px;font-weight:600;letter-spacing:-1px;text-align:center;color:#e8eefb}
+#s1-title,#key-tile{opacity:1} /* frame zero already shows the subject */
+.panel{position:absolute;background:linear-gradient(180deg,#121e36,#0e1830);border:1px solid #26395f;border-radius:20px;box-shadow:0 18px 44px rgba(2,6,16,.5)}
+.icon{width:40px;height:40px;fill:none;stroke:#71a8ff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.links{position:absolute;left:0;top:0;width:2400px;height:2100px;overflow:visible}
+.links path{fill:none;stroke:#33507f;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.glyph{width:64px;height:64px;border-radius:16px;background:rgba(113,168,255,.12);display:flex;align-items:center;justify-content:center;flex:none}
+.glyph .icon{width:34px;height:34px}
+.chip-text b{font-size:29px;font-weight:600;display:block}
+.chip-text small{font-size:21px;color:#8fa3c4;display:block;margin-top:5px}
+
+/* scene 1 — identity */
+#s1-title{left:120px}
+#key-tile{left:370px;top:610px;width:340px;height:340px;border-radius:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+#key-tile .icon{width:112px;height:112px;stroke-width:1.4}
+#key-tile b{font-size:31px;font-weight:600;color:#8fa3c4;letter-spacing:.4px}
+.chip{display:flex;align-items:center;gap:24px;padding:0 30px}
+#chip-id,#chip-scope{left:310px;width:460px;height:110px;opacity:0}
+#chip-id{top:1075px}
+#chip-scope{top:1245px}
+
+/* scene 2 — request flow */
+#s2-title{left:1440px}
+.node{display:flex;align-items:center;justify-content:center;gap:20px;font-size:30px;font-weight:600;height:120px;width:380px}
+.node .icon{width:44px;height:44px}
+#node-app{left:1670px;top:500px;opacity:0}
+#node-api{left:1670px;top:1000px;opacity:0}
+#node-data{left:1670px;top:1500px;opacity:0}
+.mini{display:flex;align-items:center;justify-content:center;gap:16px;font-size:25px;color:#8fa3c4;height:88px;width:440px}
+.mini em{font-style:normal;letter-spacing:3px;color:#71a8ff}
+#key-chip{left:1640px;top:756px;opacity:0}
+.ring{position:absolute;left:2066px;top:1016px;width:88px;height:88px;border:3px solid #71a8ff;border-radius:50%;background:#0e1830;display:flex;align-items:center;justify-content:center;opacity:0}
+.ring .icon{width:44px;height:44px;stroke-width:2.4}
+
+/* scene 3 — rules replace scene 1 */
+#s3-title{left:120px;opacity:0}
+.rule{display:flex;align-items:center;gap:26px;padding:0 32px;width:560px;height:130px;left:260px;opacity:0}
+#rule-1{top:715px}
+#rule-2{top:905px}
+#rule-3{top:1095px}
+
+/* scene 4 — leak and recovery replace scene 2 */
+#s4-title{left:1440px;opacity:0}
+#leak-key{left:1630px;top:656px;width:460px;border:1.5px dashed #3d5583;opacity:0}
+#leak-key span{letter-spacing:1px}
+#strike{position:absolute;left:14%;top:50%;width:72%;height:3px;background:#9fb4d8;border-radius:2px}
+#chip-new{left:1630px;top:895px;width:460px;height:110px;opacity:0}
+#chip-update{left:1630px;top:1065px;width:460px;height:110px;opacity:0}
+.cycle{display:flex;align-items:center;justify-content:center;gap:24px;left:1580px;top:1510px;width:560px;height:100px;border-radius:22px;opacity:0}
+.cycle span{font-size:30px;font-weight:600}
+.cycle i{font-style:normal;font-size:26px;color:#5c739c}

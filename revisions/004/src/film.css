@@ -1,0 +1,61 @@
+/* API keys — sticker story. Portrait 1080x1920, shared world 4600x3600.
+   Board stays calm: stickers carry the story, pills only label them.
+   Initial hidden states live here; GSAP owns all transforms (fromTo). */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+body{font-family:'Inter',system-ui,sans-serif;color:#f2ecdd;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+#world{position:absolute;left:0;top:0;width:4600px;height:3600px;transform-origin:0 0;background-color:#0a1120;background-image:radial-gradient(circle,#1c2b49 1.6px,transparent 1.7px);background-size:48px 48px}
+#world section{position:absolute;left:0;top:0;width:4600px;height:3600px;pointer-events:none}
+h1{position:absolute;top:170px;width:900px;font-size:64px;font-weight:700;letter-spacing:-1px;text-align:center;color:#f2ecdd;opacity:0}
+#title-a{opacity:1}
+#underline-a{position:absolute;left:390px;top:280px;width:300px;height:6px;border-radius:3px;background:#4f8cff;transform:scaleX(0);opacity:0}
+.links{position:absolute;left:0;top:0;width:4600px;height:3600px;overflow:visible}
+.links path{fill:none;stroke:#7fb2ff;stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+
+/* stickers — one coherent die-cut set, drop shadows seat them on the board */
+.sticker{position:absolute;opacity:0;filter:drop-shadow(0 22px 30px rgba(0,0,0,.5))}
+.mini-sticker{display:block;width:44px;height:44px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));flex:none}
+
+/* pills — calm labels next to stickers */
+.pill{position:absolute;display:flex;align-items:center;gap:18px;height:92px;padding:0 34px;border:2.5px solid #e9dfc6;border-radius:46px;background:rgba(22,48,79,.88);font-size:31px;font-weight:600;color:#f2ecdd;opacity:0}
+.pill .dot{width:16px;height:16px;border-radius:50%;flex:none}
+.dot-blue{background:#4f8cff}
+.dot-coral{background:#ff7a59}
+.glyph{width:40px;height:40px;fill:none;stroke:#ff7a59;stroke-width:2.6;stroke-linecap:round;flex:none}
+
+/* scene A */
+#title-a{left:90px}
+#st-key{left:305px;top:485px}
+#chip-who{left:210px;top:1075px;width:340px;justify-content:center}
+#chip-what{left:210px;top:1195px;width:340px;justify-content:center}
+
+/* scene B */
+#title-b{left:1170px}
+#st-app{left:1490px;top:430px}
+#key-header{left:1395px;top:700px;width:450px;height:84px;font-size:27px}
+#req-line{stroke-dashoffset:1}
+#st-server{left:1490px;top:1070px}
+#st-check{left:1680px;top:1090px}
+#res-line{stroke-dashoffset:1}
+#st-database{left:1490px;top:1600px}
+
+/* scene C */
+#title-c{left:90px;top:2090px}
+.rule{position:absolute;left:200px;display:flex;align-items:center;gap:34px;opacity:0}
+#rule-1{top:2350px}
+#rule-2{top:2570px}
+#rule-3{top:2790px}
+.rule-sticker{filter:drop-shadow(0 16px 22px rgba(0,0,0,.5));flex:none}
+.rule-pill{position:static;width:470px;opacity:1}
+
+/* scene D */
+#title-d{left:1170px;top:2090px}
+#st-warning{left:1510px;top:2320px}
+.action{left:1340px;width:500px}
+#act-1{top:2590px}
+#act-2{top:2710px}
+#act-3{top:2830px}
+.cycle{left:1330px;top:2990px;width:520px;height:96px;justify-content:center;font-size:32px}
+.cycle i{font-style:normal;color:#7fb2ff}
+#st-rocket{left:1790px;top:3130px}

@@ -1,0 +1,31 @@
+{
+  "version": "006.1",
+  "title": "API keys \u2014 cross-fade cut (hook v2)",
+  "file": "exports/api-keys-crossfade-cut.mp4",
+  "sha256": "f45b1f973f9706716dab0fc85569d71ada12efa28d894ffeab618897dd2dea93",
+  "format": {
+    "container": "mp4",
+    "video": "h264 yuv420p 1080x1920 30fps 1920 frames",
+    "audio": "aac 48000 Hz stereo",
+    "durationSeconds": 64.0,
+    "bytes": 27338237
+  },
+  "hook": {
+    "design": "topic-first lockup (kicker + gradient 'API Keys' + subline) readable from frame zero; morphing generative SVG shape (blob+echo+orbit+dot) behind; real web photo (circuit key, Vecteezy, attributed in DIRECTION.md) pops on its sentence; promise pills; dip to dark at ~13.95 s returns into the presentation"
+  },
+  "editing": "cross-fade dissolves (24.35 / 34.35 / 44.2 s), packets, tilted rules, leak-recovery, cycle+rocket \u2014 unchanged",
+  "narration": {
+    "beats": 6,
+    "delivery": "x1.12, 0.38 s gaps; Fish Audio regeneration pending credit"
+  },
+  "qa": {
+    "lint": "0/0",
+    "browserChecks": "6 passed",
+    "hyperframesCheck": "PASS zero warnings (motion 300 samples, layout 22 times incl. dip-dark, contrast)",
+    "artifactVerification": "ffprobe + decoded strip: hook 0.2/3.2/6.4/11.2 s, dip 13.95 s, presentation 14.75 s, dissolves, finale"
+  },
+  "hygiene": {
+    "deletedThisSession": "vendor clones (35 MB), QA scratch, image-search scratch, compositions; repo carries no videos",
+    "workspace": "one current MP4 in exports/"
+  }
+}

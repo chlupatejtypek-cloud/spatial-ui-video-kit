@@ -1,0 +1,15 @@
+{
+  "duration": 57,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#title-a", "bySec": 0.25 },
+    { "kind": "appearsBy", "selector": "#st-key", "bySec": 1.5 },
+    { "kind": "appearsBy", "selector": "#st-app", "bySec": 14.2 },
+    { "kind": "appearsBy", "selector": "#rule-1", "bySec": 31.6 },
+    { "kind": "appearsBy", "selector": "#act-1", "bySec": 43.6 },
+    { "kind": "appearsBy", "selector": "#st-rocket", "bySec": 51.3 },
+    { "kind": "before", "a": "#rule-1", "b": "#rule-3" },
+    { "kind": "before", "a": "#act-1", "b": "#cycle-pill" },
+    { "kind": "staysInFrame", "selector": "#cycle-pill" },
+    { "kind": "keepsMoving", "withinSelector": "#world", "maxStaticSec": 3.4 }
+  ]
+}

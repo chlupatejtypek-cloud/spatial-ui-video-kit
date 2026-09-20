@@ -1,0 +1,88 @@
+<div id="root" data-composition-id="motion-006" data-width="1080" data-height="1920" data-duration="64" data-fps="30" data-start="0">
+  <div id="world">
+
+    <!-- Viewport A — hook: text-first title over a morphing generative shape,
+         a real photo lands on “…they are called API keys”, then the dip
+         returns us to the presentation (key sticker + two jobs). -->
+    <section id="scene-a" data-layout-allow-overflow>
+      <svg id="hook-blob" viewBox="0 0 1080 1920" aria-hidden="true">
+        <defs>
+          <linearGradient id="blob-fill" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4f8cff" stop-opacity=".22"/>
+            <stop offset=".55" stop-color="#2b5cb8" stop-opacity=".12"/>
+            <stop offset="1" stop-color="#16304f" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="blob-stroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#9cc5ff"/>
+            <stop offset="1" stop-color="#4f8cff" stop-opacity=".25"/>
+          </linearGradient>
+        </defs>
+        <g id="blob-spin">
+          <path id="blob-main" d="M 700 420 C 900 380 1060 520 1020 720 C 980 920 1120 1040 1010 1220 C 900 1400 660 1380 560 1220 C 460 1060 560 940 520 780 C 480 620 520 460 700 420 Z" fill="url(#blob-fill)" stroke="url(#blob-stroke)" stroke-width="3"/>
+          <path id="blob-echo" d="M 700 420 C 900 380 1060 520 1020 720 C 980 920 1120 1040 1010 1220 C 900 1400 660 1380 560 1220 C 460 1060 560 940 520 780 C 480 620 520 460 700 420 Z" fill="none" stroke="#7fb2ff" stroke-opacity=".35" stroke-width="1.6" transform="translate(-36,52) scale(.94)"/>
+        </g>
+        <ellipse id="blob-orbit" cx="770" cy="880" rx="430" ry="560" fill="none" stroke="#4f8cff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="3 14"/>
+        <circle id="orbit-dot" r="7" fill="#ffd9a8"/>
+      </svg>
+
+      <div id="hook-lockup">
+        <div id="hook-kicker">the 60-second explainer</div>
+        <h1 id="hook-title">API Keys</h1>
+        <div id="hook-sub">what they are &bull; how they work &bull; how they leak</div>
+      </div>
+
+      <figure id="hook-photo">
+        <img src="assets/photo/api-key-circuit.png" width="480" height="320" alt="">
+        <figcaption>an API key, in the wild</figcaption>
+      </figure>
+
+      <div id="promise-1" class="minipill retire">what they are</div>
+      <div id="promise-2" class="minipill retire">how they work</div>
+      <div id="promise-3" class="minipill retire">how they leak</div>
+
+      <div id="board-a">
+        <h1 id="title-a">Two jobs, one string</h1>
+        <img id="st-key" class="sticker retire" src="assets/stickers/key.png" width="420" height="420" alt="">
+        <div id="chip-who" class="pill retire"><i class="dot dot-blue"></i><span>who is asking</span></div>
+        <div id="chip-what" class="pill retire"><i class="dot dot-coral"></i><span>what it may do</span></div>
+      </div>
+    </section>
+
+    <!-- Viewport B — one verified request, alive with packets -->
+    <section id="scene-b" data-layout-allow-overflow>
+      <h1 id="title-b" class="retire">One verified request</h1>
+      <img id="st-app" class="sticker retire" src="assets/stickers/app.png" width="260" height="260" alt="">
+      <div id="key-header" class="pill retire"><i class="mini-sticker" style="background-image:url(assets/stickers/key.png)"></i><span>Authorization: Bearer&nbsp;&bull;&bull;&bull;&bull;</span></div>
+      <svg class="links" viewBox="0 0 4600 3600"><path id="req-line" class="retire" d="M1620 800V1060" pathLength="1"/><path id="res-line" class="retire" d="M1620 1345V1590" pathLength="1"/></svg>
+      <i id="pkt-a" class="packet retire"></i>
+      <i id="pkt-b" class="packet retire"></i>
+      <img id="st-server" class="sticker retire" src="assets/stickers/server.png" width="260" height="260" alt="">
+      <img id="st-check" class="sticker retire" src="assets/stickers/check.png" width="130" height="130" alt="">
+      <img id="st-database" class="sticker retire" src="assets/stickers/database.png" width="260" height="260" alt="">
+    </section>
+
+    <!-- Viewport C — keep it safe, sticker cards that land tilted -->
+    <section id="scene-c" data-layout-allow-overflow>
+      <h1 id="title-c" class="retire">Keep it safe</h1>
+      <div id="rule-1" class="rule-card retire"><img class="rule-sticker" src="assets/stickers/padlock.png" width="190" height="190" alt=""><div class="pill rule-pill"><span>never push a key into a repo</span></div></div>
+      <div id="rule-2" class="rule-card retire"><img class="rule-sticker" src="assets/stickers/shield.png" width="190" height="190" alt=""><div class="pill rule-pill"><span>smallest scope that works</span></div></div>
+      <div id="rule-3" class="rule-card retire"><img id="rotate-sticker" class="rule-sticker" src="assets/stickers/rotate.png" width="190" height="190" alt=""><div class="pill rule-pill"><span>rotate it before it grows old</span></div></div>
+      <div id="boring" class="minipill retire">boring on purpose</div>
+    </section>
+
+    <!-- Viewport D — leak, recover, build -->
+    <section id="scene-d" data-layout-allow-overflow>
+      <h1 id="title-d">If a key leaks</h1>
+      <img id="st-warning" class="sticker" src="assets/stickers/warning.png" width="220" height="220" alt="">
+      <div id="leak-pill" class="pill leak"><span>sk-live&nbsp;&bull;&bull;&bull;&bull;&bull;&bull;</span><i id="strike"></i></div>
+      <div id="act-1" class="pill action"><svg class="glyph" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="m6.2 6.2 11.6 11.6"/></svg><span>Revoke it now</span></div>
+      <div id="act-2" class="pill action"><i class="mini-sticker" style="background-image:url(assets/stickers/key.png)"></i><span>Issue a fresh key</span></div>
+      <div id="act-3" class="pill action"><i class="mini-sticker" style="background-image:url(assets/stickers/app.png)"></i><span>Update the app</span></div>
+      <div id="cycle-pill" class="pill cycle"><span>Identify</span><i>&rarr;</i><span>Verify</span><i>&rarr;</i><span>Protect</span></div>
+      <img id="st-rocket" class="sticker" src="assets/stickers/rocket.png" width="180" height="180" alt="">
+    </section>
+
+  </div>
+  <div id="vignette"></div>
+  <div id="dip"></div>
+</div>

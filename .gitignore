@@ -1,0 +1,17 @@
+node_modules/
+.cache/
+.hyperframes/
+.env
+.env.*
+*.log
+
+# generated compositions are rebuilt locally, never committed
+revisions/*/composition/
+
+# QA keyframes are scratch; contact sheets are kept
+revisions/*/qa/*.png
+!revisions/*/qa/contact-sheet.png
+!revisions/*/qa/render-contact-sheet.png
+
+# finished films are committed selectively (current only)
+exports/*

@@ -1,0 +1,31 @@
+{
+  "passed": 6,
+  "results": [
+    {
+      "name": "Pure local film: no external requests, no interactive web UI",
+      "pass": true
+    },
+    {
+      "name": "No branding, tool names, scene numbers or slogans",
+      "pass": true
+    },
+    {
+      "name": "Frame zero already shows the subject",
+      "pass": true
+    },
+    {
+      "name": "Narration clips are wired with the planned starts",
+      "pass": true
+    },
+    {
+      "name": "Backward and nonsequential seeks are deterministic",
+      "pass": true
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "remote": []
+}

@@ -1,0 +1,80 @@
+<div id="root" data-composition-id="blackboard" data-width="1920" data-height="1080" data-duration="24" data-fps="30" data-start="0">
+  <div id="dot-grid" aria-hidden="true"></div>
+  <section id="space" class="camera-space" data-layout-allow-overflow>
+    <div id="camera-rig"><div id="camera-zoom"><div id="world" data-layout-allow-overflow>
+      <div class="world-heading"><span class="eyebrow">A MOTION STUDY / 001</span><h1>Everything, connected.</h1><p>One space. A different perspective.</p></div>
+      <svg class="world-connections" viewBox="0 0 4400 2800" fill="none" aria-hidden="true" data-layout-ignore>
+        <path class="route-shadow" d="M1580 940 C2020 940 2100 840 2540 840 M3210 1260 C3210 1490 3450 1510 3450 1740 M2780 2160 C2380 2160 2180 2240 1760 2240 M1090 1820 C1090 1620 910 1560 910 1360"/>
+        <path class="route" d="M1580 940 C2020 940 2100 840 2540 840 M3210 1260 C3210 1490 3450 1510 3450 1740 M2780 2160 C2380 2160 2180 2240 1760 2240 M1090 1820 C1090 1620 910 1560 910 1360"/>
+        <g fill="#d3f99a"><circle cx="1580" cy="940" r="8"/><circle cx="2540" cy="840" r="8"/><circle cx="3210" cy="1260" r="8"/><circle cx="3450" cy="1740" r="8"/><circle cx="2780" cy="2160" r="8"/><circle cx="1760" cy="2240" r="8"/><circle cx="1090" cy="1820" r="8"/><circle cx="910" cy="1360" r="8"/></g>
+      </svg>
+      <div class="world-note note-a"><span>01 → 02</span> Follow the idea <i>↗</i></div>
+      <div class="world-note note-b"><span>02 → 03</span> See the impact <i>↓</i></div>
+      <div class="world-note note-c"><span>03 → 04</span> Make it matter <i>←</i></div>
+      <div class="center-note"><span class="crosshair">+</span><span>NO CUTS.<br>JUST CONNECTIONS.</span></div>
+
+      <article id="overview" class="world-panel" data-panel="overview" data-layout-allow-overflow>
+        <div class="panel-label"><span><i class="scene-dot lime"></i>01 / OVERVIEW</span><span>THE BIG PICTURE</span></div>
+        <div class="window">
+          <header class="window-bar"><span class="noda-brand">{{icon:brand}}noda</span><span class="breadcrumb">Workspace <b>/</b> Overview</span><div class="window-right"><span class="tiny-dot"></span> All systems in flow <span class="avatar">K</span></div></header>
+          <div class="overview-layout">
+            <aside class="mini-nav"><span class="nav-icon selected">{{icon:grid}}</span><span class="nav-icon">{{icon:layers}}</span><span class="nav-icon">{{icon:chart}}</span><span class="nav-icon">{{icon:inbox}}</span><span class="nav-bottom">{{icon:settings}}</span></aside>
+            <div class="overview-main">
+              <div class="intro-row"><div><span class="eyebrow">LESS NOISE. MORE MOMENTUM.</span><h2>Your work. In focus.</h2><p>A little clarity goes a long way.</p></div><span class="small-button">{{icon:plus}} New project</span></div>
+              <div class="metrics">
+                <div class="metric"><span class="metric-name">Active projects {{icon:layers}}</span><div class="metric-value"><strong id="project-count">12</strong><span class="spark-bars"><i style="height:14px"></i><i style="height:22px"></i><i style="height:18px"></i><i style="height:32px"></i><i style="height:29px"></i><i style="height:44px"></i></span></div><span class="metric-foot"><em>↗ 3 new</em> this month</span></div>
+                <div class="metric"><span class="metric-name">Tasks completed {{icon:check-circle}}</span><div class="metric-value"><strong id="task-count">148</strong><svg width="100" height="46" viewBox="0 0 100 46"><path d="M2 42L18 29L33 33L50 18L68 22L82 10L98 3" fill="none" stroke="#d3f99a" stroke-width="3"/></svg></div><span class="metric-foot"><em>↗ 24.6%</em> vs. last month</span></div>
+                <div class="metric"><span class="metric-name">Team momentum {{icon:activity}}</span><div class="metric-value"><strong>92<span class="value-suffix">.8%</span></strong><span class="metric-orbit">↗</span></div><span class="metric-foot"><em>Looking good</em> keep it going</span></div>
+              </div>
+              <div class="overview-bottom"><div class="project-list"><div class="section-title"><h3>In motion</h3><span>All projects ↗</span></div>
+                <div class="project-row"><span class="project-mark lime">{{icon:spark}}</span><div><strong>Website refresh</strong><span>Make a great first impression</span></div><span class="tag">Design</span><span class="row-progress"><i style="--p:68%"></i></span><span class="row-value">68%</span></div>
+                <div class="project-row"><span class="project-mark lilac">{{icon:phone}}</span><div><strong>Mobile experience</strong><span>Good ideas, on the go</span></div><span class="tag">Build</span><span class="row-progress"><i style="--p:42%"></i></span><span class="row-value">42%</span></div>
+                <div class="project-row"><span class="project-mark peach">{{icon:shapes}}</span><div><strong>Brand system</strong><span>A language of our own</span></div><span class="tag">Review</span><span class="row-progress"><i style="--p:89%"></i></span><span class="row-value">89%</span></div>
+              </div><div class="focus-card"><span class="metric-name">Focus time <span>↗</span></span><div class="focus-number">32.6<span>hrs</span></div><svg viewBox="0 0 260 100" class="focus-graph" aria-label="Increasing focus time"><path d="M0 95H260M0 50H260M0 5H260" stroke="#343c32" stroke-dasharray="3 7"/><path id="focus-line" d="M0 83C20 85 24 59 45 64S69 84 87 53S114 61 131 34S158 55 178 31S215 36 238 12L260 6" stroke="#d3f99a" stroke-width="3" fill="none" pathLength="1"/></svg><span class="focus-foot">A little better, every day.</span></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="workflow" class="world-panel" data-panel="workflow" data-layout-allow-overflow>
+        <div class="panel-label"><span><i class="scene-dot lilac"></i>02 / WORKFLOW</span><span>IDEAS INTO ACTION</span></div>
+        <div class="window">
+          <header class="window-bar"><span class="noda-brand">{{icon:brand}}noda</span><span class="breadcrumb">Workspace <b>/</b> Workflow</span><div class="window-right"><span class="soft-pill"><i></i> Flow is live</span><span class="avatar">K</span></div></header>
+          <div class="flow-main"><div class="intro-row"><div><span class="eyebrow">BUILT TO KEEP MOVING</span><h2>From idea to done.</h2><p>Less friction. More possibility.</p></div><span class="small-button">{{icon:sliders}} Edit workflow</span></div>
+            <div class="flow-canvas"><svg viewBox="0 0 1210 465" class="flow-lines" fill="none" aria-hidden="true"><path class="flow-wire-bg" d="M298 142H365Q395 142 395 174V232Q395 264 425 264H456M750 264H790Q820 264 820 233V174Q820 142 850 142H901M604 368V362Q604 394 640 394H897"/><path id="wire-one" class="flow-wire" pathLength="1" d="M298 142H365Q395 142 395 174V232Q395 264 425 264H456"/><path id="wire-two" class="flow-wire" pathLength="1" d="M750 264H790Q820 264 820 233V174Q820 142 850 142H901"/><path id="wire-three" class="flow-wire" pathLength="1" d="M604 368V362Q604 394 640 394H897"/></svg>
+              <div class="flow-node capture-node"><span class="node-icon lime">{{icon:bolt}}</span><span class="node-step">01 / CAPTURE</span><h3>A spark of an idea</h3><p>Start with something small.</p><span class="node-footer"><i></i> New idea received <span>✓</span></span><i class="port port-right"></i></div>
+              <div class="flow-node create-node"><span class="node-icon lilac">{{icon:shapes}}</span><span class="node-step">02 / CREATE</span><h3>Make it happen</h3><p>Give your idea room to grow.</p><div class="node-avatars"><span>K</span><span>M</span><span>A</span><small>Better, together.</small></div><i class="port port-left"></i><i class="port port-right"></i><i class="port port-bottom"></i></div>
+              <div class="flow-node deliver-node"><span class="node-icon lime">{{icon:send}}</span><span class="node-step">03 / DELIVER</span><h3>Out into the world</h3><p>Good work deserves to be seen.</p><span class="node-footer"><i></i> Ready for launch <span>↗</span></span><i class="port port-left"></i></div>
+              <div class="flow-notification"><span class="check-badge">{{icon:check}}</span><div><strong>Everything is connected.</strong><span>One clear path forward.</span></div><i class="port port-left"></i></div>
+            </div>
+            <div class="flow-bottom"><span>{{icon:link}} Connected by design.</span><span>3 STEPS <b>·</b> INFINITE POSSIBILITIES</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article id="analytics" class="world-panel" data-panel="analytics" data-layout-allow-overflow>
+        <div class="panel-label"><span><i class="scene-dot blue"></i>03 / ANALYTICS</span><span>PROGRESS, MADE VISIBLE</span></div>
+        <div class="window"><header class="window-bar"><span class="noda-brand">{{icon:brand}}noda</span><span class="breadcrumb">Workspace <b>/</b> Insights</span><div class="window-right"><span class="soft-pill">{{icon:calendar}} Last 30 days</span><span class="avatar">K</span></div></header>
+          <div class="analytics-main"><div class="intro-row"><div><span class="eyebrow">THE COMPOUND EFFECT</span><h2>Good things add up.</h2><p>Small steps. Measurable progress.</p></div><span class="positive-pill">↗ 18.4% this month</span></div>
+            <div class="analytics-grid"><div class="chart-card"><div class="chart-heading"><div><span class="metric-name">Product momentum</span><strong>24.8<span>k</span><em>↗ 18.4%</em></strong></div><span class="chart-legend"><i></i> This month <i class="legend-muted"></i> Last month</span></div>
+              <div class="chart-area"><div class="axis-y"><span>30k</span><span>20k</span><span>10k</span><span>0</span></div><svg viewBox="0 0 790 288" class="main-chart" aria-label="Illustrative rising product momentum"><defs><linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#d3f99a" stop-opacity=".16"/><stop offset="1" stop-color="#d3f99a" stop-opacity="0"/></linearGradient></defs><path d="M0 14H790M0 94H790M0 174H790M0 254H790" stroke="#394134" stroke-dasharray="3 7"/><path d="M0 230C48 232 57 190 99 194S165 215 208 180S263 184 315 150S384 176 427 148S495 151 540 126S602 148 639 120S710 109 750 103L790 100" fill="none" stroke="#66715e" stroke-width="2.5" stroke-dasharray="7 7"/><path id="area-fill" d="M0 238C45 238 62 196 104 208S170 183 211 168S266 201 314 144S380 165 425 112S494 139 540 92S603 117 643 66S708 75 750 27L790 14V280H0Z" fill="url(#chart-fill)"/><path id="momentum-line" d="M0 238C45 238 62 196 104 208S170 183 211 168S266 201 314 144S380 165 425 112S494 139 540 92S603 117 643 66S708 75 750 27L790 14" fill="none" stroke="#d3f99a" stroke-width="4" pathLength="1"/><g id="chart-highlight"><path d="M643 66V280" stroke="#d3f99a" stroke-opacity=".4" stroke-dasharray="5 6"/><circle cx="643" cy="66" r="8" fill="#d3f99a" stroke="#191d19" stroke-width="4"/></g></svg><div class="chart-tooltip"><span>21 SEP</span><strong>21,840 <em>↗ 24%</em></strong></div></div><div class="axis-x"><span>01 Sep</span><span>07 Sep</span><span>14 Sep</span><span>21 Sep</span><span>30 Sep</span></div>
+            </div><div class="channels-card"><span class="metric-name">Where it happens {{icon:arrow-up-right}}</span><div class="channel"><span>Organic search <b>48%</b></span><div><i style="--p:48%;--c:#d3f99a"></i></div></div><div class="channel"><span>Direct <b>32%</b></span><div><i style="--p:32%;--c:#c0b6e9"></i></div></div><div class="channel"><span>Referrals <b>20%</b></span><div><i style="--p:20%;--c:#a9cbdc"></i></div></div><div class="insight"><span>{{icon:spark}}</span><strong>Momentum looks<br>good on you.</strong><p>Your best month yet.</p></div></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article id="detail" class="world-panel" data-panel="detail" data-layout-allow-overflow>
+        <div class="panel-label"><span><i class="scene-dot peach"></i>04 / THE DETAILS</span><span>BRING IT ALL TOGETHER</span></div>
+        <div class="window"><header class="window-bar"><span class="noda-brand">{{icon:brand}}noda</span><span class="breadcrumb">Projects <b>/</b> Website refresh</span><div class="window-right"><span class="soft-pill"><i></i> In review</span><span class="avatar">K</span></div></header>
+          <div class="detail-main"><div class="detail-copy"><span class="project-mark lime large-mark">{{icon:spark}}</span><span class="eyebrow">THE NEXT CHAPTER STARTS HERE</span><h2>Small details.<br>Big difference.</h2><p>Bring the pieces together.<br>Make something worth putting into the world.</p><div class="checklist"><div class="check-row"><span class="task-check">{{icon:check}}</span><span>A clear direction</span><small>Done</small></div><div class="check-row"><span class="task-check">{{icon:check}}</span><span>A thoughtful experience</span><small>Done</small></div><div class="check-row"><span class="task-check">{{icon:check}}</span><span>The finishing touches</span><small>Done</small></div></div><div class="launch-action"><span class="launch-button">Ready for what’s next {{icon:arrow-up-right}}</span><span class="launch-caption">Made with a little more care.</span></div></div>
+            <div class="detail-side"><div class="health-card"><div class="section-title"><h3>Project health</h3><span>{{icon:more}}</span></div><div class="progress-ring"><svg viewBox="0 0 240 240"><circle cx="120" cy="120" r="100" fill="none" stroke="#333c2e" stroke-width="13"/><circle id="health-ring" cx="120" cy="120" r="100" fill="none" stroke="#d3f99a" stroke-width="13" stroke-linecap="round" stroke-dasharray="628.319" stroke-dashoffset="0"/></svg><div><strong id="health-value">100</strong><span>READY TO GO</span></div></div><div class="health-foot"><span class="tiny-dot"></span> Looking good, from every angle.</div></div><div class="comment-card"><div><span class="avatar lilac">K</span><strong>Klára</strong><span>Just now</span></div><p>“It’s the little things that<br>make it feel right.”</p><span class="comment-reaction">♡ &nbsp; 3</span></div></div>
+          </div>
+        </div>
+      </article>
+      <div class="world-footer"><span>NODA / A FICTIONAL WORKSPACE</span><span>DESIGN → CONNECT → MOVE</span><span>BLACKBOARD STUDIO © 2026</span></div>
+    </div></div></div>
+  </section>
+  <div class="film-brand" data-layout-ignore><span>{{icon:brand}}blackboard<span class="brand-period">.</span></span><small>MOTION STUDY 001</small></div>
+  <div class="film-tag" data-layout-ignore>ONE SPACE. NO LIMITS. <span>↗</span></div>
+  <div class="film-footer" data-layout-ignore><span>OPENDESIGN × HYPERFRAMES</span><span>02D / 1920 × 1080</span></div>
+</div>

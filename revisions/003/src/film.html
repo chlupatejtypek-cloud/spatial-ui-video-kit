@@ -1,0 +1,62 @@
+<div id="root" data-composition-id="motion-003" data-width="1080" data-height="1920" data-duration="52" data-fps="30" data-start="0">
+  <div id="world">
+
+    <section id="s1" data-layout-allow-overflow aria-label="What an API key is">
+      <h1 id="s1-title" class="retire">What is an API key?</h1>
+      <div id="key-tile" class="panel retire">
+        {{icon:key}}
+        <b>API key</b>
+      </div>
+      <svg class="links" viewBox="0 0 2400 2100"><path id="link-id" class="retire" d="M540 950V1075" pathLength="1"/><path id="link-scope" class="retire" d="M540 1185V1245" pathLength="1"/></svg>
+      <div id="chip-id" class="chip panel retire">
+        <span class="glyph">{{icon:badge}}</span>
+        <span class="chip-text"><b>Who is calling</b><small>identity</small></span>
+      </div>
+      <div id="chip-scope" class="chip panel retire">
+        <span class="glyph">{{icon:shield}}</span>
+        <span class="chip-text"><b>What it may do</b><small>permission</small></span>
+      </div>
+    </section>
+
+    <section id="s2" data-layout-allow-overflow aria-label="How a verified request works">
+      <h1 id="s2-title" class="retire">How a call works</h1>
+      <svg class="links" viewBox="0 0 2400 2100"><path id="req-line" class="retire" d="M1860 620V1000" pathLength="1"/><path id="res-line" class="retire" d="M1860 1120V1500" pathLength="1"/></svg>
+      <div id="node-app" class="node panel retire">{{icon:app}}<b>Your app</b></div>
+      <div id="node-api" class="node panel retire">{{icon:server}}<b>API server</b></div>
+      <div id="node-data" class="node panel retire">{{icon:database}}<b>Data</b></div>
+      <div id="key-chip" class="mini panel retire"><span>Authorization: Bearer</span><em>&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</em></div>
+      <div id="api-check" class="ring retire">{{icon:check}}</div>
+    </section>
+
+    <section id="s3" data-layout-allow-overflow aria-label="Rules for keeping keys safe">
+      <h1 id="s3-title" class="retire">Keep it safe</h1>
+      <div id="rule-1" class="rule panel retire">
+        <span class="glyph">{{icon:ban}}</span>
+        <span class="chip-text"><b>Never commit keys</b><small>not even for a quick test</small></span>
+      </div>
+      <div id="rule-2" class="rule panel retire">
+        <span class="glyph">{{icon:sliders}}</span>
+        <span class="chip-text"><b>Restrict the scope</b><small>only what it really needs</small></span>
+      </div>
+      <div id="rule-3" class="rule panel retire">
+        <span class="glyph">{{icon:loop}}</span>
+        <span class="chip-text"><b>Rotate regularly</b><small>old keys must expire</small></span>
+      </div>
+    </section>
+
+    <section id="s4" data-layout-allow-overflow aria-label="Recovering from a leaked key">
+      <h1 id="s4-title">If a key leaks</h1>
+      <div id="leak-key" class="mini panel leak"><span>sk-live-&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><i id="strike"></i></div>
+      <div id="chip-new" class="chip panel">
+        <span class="glyph">{{icon:key}}</span>
+        <span class="chip-text"><b>Issue a new key</b></span>
+      </div>
+      <div id="chip-update" class="chip panel">
+        <span class="glyph">{{icon:update}}</span>
+        <span class="chip-text"><b>Update the app</b></span>
+      </div>
+      <div id="cycle" class="panel cycle"><span>Identify</span><i>&rarr;</i><span>Verify</span><i>&rarr;</i><span>Protect</span></div>
+    </section>
+
+  </div>
+</div>

@@ -1,0 +1,34 @@
+{
+  "version": "005",
+  "title": "API keys \u2014 hook cut",
+  "file": "exports/api-keys-hook-cut.mp4",
+  "sha256": "2509f7f44b919ef4b012bf738c6c2b63ecc8f8f9eb14cc15566493ee263ff06f",
+  "format": {
+    "container": "mp4",
+    "video": "h264 yuv420p 1080x1920 30fps 1920 frames",
+    "audio": "aac 48000 Hz stereo",
+    "durationSeconds": 64.0,
+    "bytes": 19351135
+  },
+  "narration": {
+    "beats": 6,
+    "delivery": "long sentences, 0.38 s gaps, atempo x1.12 (fallback voice)",
+    "fishAudio": "key supplied but HTTP 402 (no API credit); scripts/narrate-fish.mjs ready to regenerate",
+    "loudness": "beats -18..-22 dB mean, tail -91 dB"
+  },
+  "design": {
+    "hook": "blurred living world + sharp title from frame zero; key un-blurs at 5.1 s",
+    "transitions": "fast pan 0.55 s / dip-to-dark swap 34.6 s / zoom-punch x1.9 44.4 s",
+    "ambientMotion": "packet dots on flow lines, ghost drift, sticker tilt wobble, rotate spin"
+  },
+  "qa": {
+    "lint": "0/0",
+    "browserChecks": "6 passed",
+    "hyperframesCheck": "PASS zero warnings (motion 300 samples, layout 12 times, contrast)",
+    "artifactVerification": "ffprobe + decoded exact-time strip incl. dip and punch frames"
+  },
+  "notes": [
+    "Old 004 mp4 deleted per storage policy; exports holds only the current film.",
+    "No sticker budget used this session (0 new stickers, set reused)."
+  ]
+}

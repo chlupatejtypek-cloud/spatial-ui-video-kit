@@ -1,0 +1,82 @@
+/* API keys — hook cut. Portrait 1080x1920, world 4600x3600, sticker set reused from 004.
+   Cold open: the world is alive and blurred behind a sharp promise; focus = blur, not emptiness.
+   Initial hidden states live here; GSAP owns every transform via fromTo/absolute tweens. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+body{font-family:'Inter',system-ui,sans-serif;color:#f2ecdd;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+#world{position:absolute;left:0;top:0;width:4600px;height:3600px;transform-origin:0 0;background-color:#0a1120;background-image:radial-gradient(circle,#1c2b49 1.6px,transparent 1.7px);background-size:48px 48px}
+#world section{position:absolute;left:0;top:0;width:4600px;height:3600px;pointer-events:none}
+#vignette{position:absolute;left:0;top:0;width:1080px;height:1920px;background:radial-gradient(ellipse 120% 90% at 50% 42%,transparent 55%,rgba(4,8,18,.55) 100%)}
+#dip{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#04070f;opacity:0}
+
+h1{position:absolute;top:170px;width:900px;font-size:64px;font-weight:700;letter-spacing:-1px;text-align:center;color:#f2ecdd;opacity:0}
+#title-a{left:90px;opacity:1;font-size:88px;top:150px;text-shadow:0 6px 30px rgba(79,140,255,.35)}
+.sub{position:absolute;left:240px;top:300px;width:600px;text-align:center;font-size:30px;color:#9db4d8;opacity:0}
+.links{position:absolute;left:0;top:0;width:4600px;height:3600px;overflow:visible}
+.links path{fill:none;stroke:#7fb2ff;stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+
+.sticker{position:absolute;opacity:0;filter:drop-shadow(0 22px 30px rgba(0,0,0,.5))}
+.ghost{position:absolute;opacity:.9;filter:blur(14px) drop-shadow(0 20px 26px rgba(0,0,0,.5));background-size:contain;background-repeat:no-repeat;background-position:center}
+#ghost-app{left:150px;top:420px;width:150px;height:150px}
+#ghost-check{width:130px;height:130px}
+#ghost-shield{width:160px;height:160px}
+#ghost-rotate{width:150px;height:150px}
+#ghost-padlock{width:140px;height:140px}
+#ghost-database{width:150px;height:150px}
+#ghost-server{width:150px;height:150px}
+#ghost-check{left:790px;top:400px}
+#ghost-shield{left:110px;top:900px}
+#ghost-rotate{left:820px;top:920px}
+#ghost-padlock{left:160px;top:1340px}
+#ghost-database{left:780px;top:1360px}
+#ghost-server{left:470px;top:1580px}
+
+.pill{position:absolute;display:flex;align-items:center;gap:18px;height:92px;padding:0 34px;border:2.5px solid #e9dfc6;border-radius:46px;background:rgba(22,48,79,.88);font-size:31px;font-weight:600;color:#f2ecdd;opacity:0}
+.pill .dot{width:16px;height:16px;border-radius:50%;flex:none}
+.dot-blue{background:#4f8cff}
+.dot-coral{background:#ff7a59}
+.glyph{width:40px;height:40px;fill:none;stroke:#ff7a59;stroke-width:2.6;stroke-linecap:round;flex:none}
+.mini-sticker{display:block;width:44px;height:44px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));flex:none}
+.minipill{position:absolute;height:64px;padding:0 28px;border:2px solid #7fb2ff;border-radius:32px;background:rgba(22,48,79,.75);color:#bcd2f2;font-size:25px;font-weight:600;display:flex;align-items:center;opacity:0}
+
+/* scene A */
+#st-key{left:305px;top:485px}
+#promise-1{left:105px;top:1010px;transform-origin:center}
+#promise-2{left:400px;top:1010px}
+#promise-3{left:700px;top:1010px}
+#chip-who{left:210px;top:1120px;width:340px;justify-content:center}
+#chip-what{left:210px;top:1240px;width:340px;justify-content:center}
+
+/* scene B */
+#title-b{left:1170px}
+#st-app{left:1490px;top:430px}
+#key-header{left:1395px;top:700px;width:450px;height:84px;font-size:27px}
+#st-server{left:1490px;top:1070px}
+#st-check{left:1680px;top:1090px}
+#st-database{left:1490px;top:1600px}
+.packet{position:absolute;left:1613px;top:793px;
+#pkt-b{top:1338px}width:14px;height:14px;border-radius:50%;background:#ffd9a8;box-shadow:0 0 18px 4px rgba(255,217,168,.55);opacity:0}
+
+/* scene C */
+#title-c{left:90px;top:2090px}
+.rule-card{position:absolute;left:170px;display:flex;align-items:center;gap:30px;width:760px;opacity:0}
+#rule-1{top:2350px}
+#rule-2{top:2570px}
+#rule-3{top:2790px}
+.rule-sticker{filter:drop-shadow(0 16px 22px rgba(0,0,0,.5));flex:none}
+.rule-pill{position:static;width:490px;opacity:1}
+#boring{left:330px;top:2508px;border-color:#5c739c;color:#8fa3c4;font-size:22px;height:56px}
+
+/* scene D */
+#title-d{left:1170px;top:2090px}
+#st-warning{left:1510px;top:2320px}
+.leak{left:1340px;top:2560px;width:500px;letter-spacing:1px;border-style:dashed;border-color:#5d7db3}
+#strike{position:absolute;left:10%;top:50%;width:80%;height:4px;background:#ff7a59;border-radius:2px;opacity:0}
+.action{left:1340px;width:500px}
+#act-1{top:2680px}
+#act-2{top:2800px}
+#act-3{top:2920px}
+.cycle{left:1330px;top:3080px;width:520px;height:96px;justify-content:center;font-size:32px}
+.cycle i{font-style:normal;color:#7fb2ff}
+#st-rocket{left:1790px;top:3130px}
