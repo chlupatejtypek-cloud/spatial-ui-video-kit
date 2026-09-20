@@ -111,3 +111,5 @@ exports/                  finished MP4s (current only)
 ## Tools & licenses
 
 Hyperframes CLI 0.8.54 and GSAP 3.14.2 drive timing and rendering; OpenDesign 0.22.1 resources inform the design system. Details, pinned versions and license copies: [`docs/SOURCES.md`](docs/SOURCES.md) and [`docs/licenses/`](docs/licenses). No telemetry, no CDN calls at runtime, no paid APIs; the voice is generated locally during authoring and committed as plain audio files.
+
+- 007: Google AI Studio explainer (79 s) — hook: topic-first lockup + generative shape + real photo + dip to dark.

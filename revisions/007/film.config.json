@@ -1,0 +1,222 @@
+{
+  "id": "007",
+  "compositionId": "motion-007",
+  "timelineKey": "motion-007",
+  "name": "google-ai-studio",
+  "title": "Google AI Studio \u2014 the free Gemini playground",
+  "description": "Topic-first hook (lockup + generative shape + real product photo + dip to dark), then the presentation: one browser tab, steer the model, feed it anything, build with words.",
+  "width": 1080,
+  "height": 1920,
+  "duration": 79,
+  "fps": 30,
+  "output": "exports/google-ai-studio.mp4",
+  "brandScan": [
+    "blackboard",
+    "noda",
+    "hyperframes",
+    "workspace",
+    "compound effect",
+    "workflow"
+  ],
+  "frameZero": [
+    "#hook-kicker",
+    "#hook-title"
+  ],
+  "signatureIds": [
+    "world",
+    "dip",
+    "hook-lockup",
+    "hook-photo",
+    "hook-title",
+    "blob-main",
+    "st-chatbubble",
+    "promise-1",
+    "promise-2",
+    "promise-3",
+    "chip-who",
+    "chip-what",
+    "title-b",
+    "st-sliders",
+    "sys-pill",
+    "thermo",
+    "temp-pill",
+    "st-thinking",
+    "thinking-pill",
+    "title-c",
+    "st-photo",
+    "st-document",
+    "st-media",
+    "st-branch",
+    "cap-1",
+    "cap-2",
+    "cap-3",
+    "title-d",
+    "st-loop",
+    "key-pill",
+    "code-block",
+    "st-app-phone",
+    "preview-glow",
+    "cycle-pill",
+    "st-rocket"
+  ],
+  "seekTimes": [
+    0.7,
+    3.2,
+    5.4,
+    8.8,
+    11.4,
+    12.9,
+    13.55,
+    14.4,
+    17.5,
+    21.2,
+    25.7,
+    28.6,
+    30.6,
+    33.4,
+    35.8,
+    38.4,
+    40.5,
+    42.6,
+    44.5,
+    47.0,
+    49.5,
+    52.6,
+    53.7,
+    55.1,
+    57.0,
+    59.4,
+    61.6,
+    66.6,
+    74.0,
+    76.3,
+    78.6
+  ],
+  "thumb": [
+    270,
+    480
+  ],
+  "cols": 4,
+  "narration": [
+    {
+      "file": "assets/audio/beat-1.mp3",
+      "start": 0.95,
+      "duration": 12.408
+    },
+    {
+      "file": "assets/audio/beat-2.mp3",
+      "start": 13.738,
+      "duration": 11.448
+    },
+    {
+      "file": "assets/audio/beat-3.mp3",
+      "start": 25.566,
+      "duration": 12.384
+    },
+    {
+      "file": "assets/audio/beat-4.mp3",
+      "start": 38.33,
+      "duration": 14.04
+    },
+    {
+      "file": "assets/audio/beat-5.mp3",
+      "start": 52.75,
+      "duration": 12.936
+    },
+    {
+      "file": "assets/audio/beat-6.mp3",
+      "start": 66.066,
+      "duration": 11.688
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "hook-open",
+      "time": 0.7
+    },
+    {
+      "name": "hook-shape",
+      "time": 3.2
+    },
+    {
+      "name": "hook-photo",
+      "time": 6.4
+    },
+    {
+      "name": "promise",
+      "time": 11.4
+    },
+    {
+      "name": "pre-dip",
+      "time": 12.9
+    },
+    {
+      "name": "dip-dark",
+      "time": 13.55
+    },
+    {
+      "name": "presentation-in",
+      "time": 14.7
+    },
+    {
+      "name": "chips",
+      "time": 21.2
+    },
+    {
+      "name": "dissolve-1",
+      "time": 25.7
+    },
+    {
+      "name": "sliders",
+      "time": 28.8
+    },
+    {
+      "name": "thermo",
+      "time": 33.5
+    },
+    {
+      "name": "thinking",
+      "time": 36.1
+    },
+    {
+      "name": "dissolve-2",
+      "time": 38.45
+    },
+    {
+      "name": "media-row",
+      "time": 43.3
+    },
+    {
+      "name": "captions",
+      "time": 49.6
+    },
+    {
+      "name": "zoom-apex",
+      "time": 52.75
+    },
+    {
+      "name": "build-in",
+      "time": 53.9
+    },
+    {
+      "name": "build",
+      "time": 55.4
+    },
+    {
+      "name": "preview",
+      "time": 59.5
+    },
+    {
+      "name": "keypill",
+      "time": 64.8
+    },
+    {
+      "name": "cycle",
+      "time": 66.7
+    },
+    {
+      "name": "rocket",
+      "time": 77.3
+    }
+  ]
+}

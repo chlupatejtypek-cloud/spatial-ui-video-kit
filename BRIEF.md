@@ -37,3 +37,6 @@ Public GitHub repo **https://github.com/chlupatejtypek-cloud/spatial-ui-video-ki
 
 ## Docs map
 `AGENTS.md` golden rules · `README.md` repo guide · `docs/AGENT_GUIDE.md` full walkthrough + pitfall archive · `VIDEO_STYLE.md` standing style · `docs/SOURCES.md` tools/licenses.
+
+## Revision 007
+Google AI Studio explainer, 79 s — see revisions/007/DIRECTION.md.

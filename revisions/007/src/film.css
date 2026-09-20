@@ -1,0 +1,80 @@
+/* Google AI Studio — portrait 1080x1920, world 4600x3600.
+   Hook: topic-first lockup ("Google AI Studio" readable from frame zero) over a
+   morphing generative shape; the real photo lands on its sentence; then the
+   screen dips to dark and the presentation returns. Scene changes stay
+   cross-dissolves with gliding camera. GSAP owns every transform. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+body{font-family:'Inter',system-ui,sans-serif;color:#f2ecdd;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a1120}
+#world{position:absolute;left:0;top:0;width:4600px;height:3600px;transform-origin:0 0;background-color:#0a1120;background-image:radial-gradient(circle,#1c2b49 1.6px,transparent 1.7px);background-size:48px 48px}
+#world section{position:absolute;left:0;top:0;width:4600px;height:3600px;pointer-events:none}
+#vignette{position:absolute;left:0;top:0;width:1080px;height:1920px;background:radial-gradient(ellipse 120% 90% at 50% 42%,transparent 55%,rgba(4,8,18,.55) 100%)}
+#dip{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#04070f;opacity:0}
+
+h1{position:absolute;top:170px;width:900px;font-size:64px;font-weight:700;letter-spacing:-1px;text-align:center;color:#f2ecdd;opacity:0}
+.sticker{position:absolute;opacity:0;filter:drop-shadow(0 22px 30px rgba(0,0,0,.5))}
+.pill{position:absolute;display:flex;align-items:center;gap:18px;height:92px;padding:0 34px;border:2.5px solid #e9dfc6;border-radius:46px;background:rgba(22,48,79,.88);font-size:31px;font-weight:600;color:#f2ecdd;opacity:0}
+.pill .dot{width:16px;height:16px;border-radius:50%;flex:none}
+.dot-blue{background:#4f8cff}
+.dot-coral{background:#ff7a59}
+.mini-sticker{display:block;width:44px;height:44px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));flex:none}
+.minipill{position:absolute;height:64px;padding:0 28px;border:2px solid #7fb2ff;border-radius:32px;background:rgba(22,48,79,.75);color:#bcd2f2;font-size:25px;font-weight:600;display:flex;align-items:center;opacity:0}
+
+/* ── hook ─────────────────────────────────────────────────────────── */
+#hook-blob{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible}
+#blob-main{filter:drop-shadow(0 0 46px rgba(79,140,255,.3))}
+#orbit-dot{opacity:1}
+#hook-lockup{position:absolute;left:40px;top:330px;width:1000px;text-align:center}
+#hook-kicker{display:inline-block;font-size:24px;font-weight:600;letter-spacing:7px;text-transform:uppercase;color:#7fb2ff;padding-bottom:10px}
+#hook-kicker::after{content:'';display:block;width:64px;height:3px;border-radius:2px;background:#4f8cff;margin:16px auto 0}
+#hook-title{opacity:1;position:static;width:auto;font-size:112px;font-weight:800;letter-spacing:-3px;line-height:1.04;margin-top:26px;
+  background:linear-gradient(180deg,#f4f8ff 20%,#9cc5ff 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#hook-sub{margin-top:30px;font-size:31px;color:#9db4d8;letter-spacing:.5px}
+#hook-photo{position:absolute;left:290px;top:940px;width:500px;margin:0;opacity:0}
+#hook-photo img{display:block;width:500px;height:auto;border-radius:26px;border:2px solid rgba(127,178,255,.4);box-shadow:0 34px 90px rgba(79,140,255,.28),0 10px 30px rgba(0,0,0,.6)}
+#hook-photo figcaption{margin-top:18px;text-align:center;font-size:24px;color:#8fa3c4;font-weight:500}
+#promise-1{left:175px;top:1520px}
+#promise-2{left:400px;top:1520px}
+#promise-3{left:625px;top:1520px}
+
+/* presentation inside viewport A (after the dip) */
+#board-a{position:absolute;left:0;top:0;width:2400px;height:2100px}
+#title-a{left:90px;top:200px;font-size:70px}
+#board-a #st-chatbubble{left:305px;top:520px}
+#chip-who{left:210px;top:1075px;width:340px;justify-content:center}
+#chip-what{left:210px;top:1195px;width:340px;justify-content:center}
+
+/* scene B — controls */
+#title-b{left:1170px}
+#st-sliders{left:1490px;top:430px}
+#sys-pill{left:1395px;top:960px;width:450px;height:84px;font-size:27px}
+#thermo{position:absolute;left:1560px;top:1110px;width:200px;height:320px;opacity:0}
+#temp-pill{left:1395px;top:1490px;width:450px;height:84px;font-size:27px;justify-content:center}
+#st-thinking{left:1520px;top:1560px}
+#thinking-pill{left:1140px;top:1650px;width:360px;height:80px;font-size:27px;justify-content:center}
+
+/* scene C — multimodal */
+#title-c{left:90px;top:2090px}
+#st-photo{left:150px;top:2350px}
+#st-document{left:150px;top:2570px}
+#st-media{left:150px;top:2790px}
+#cap-1{left:640px;top:2500px;width:420px;height:72px;font-size:22px}
+#cap-2{left:640px;top:2720px;width:420px;height:72px;font-size:22px}
+#cap-3{left:640px;top:2940px;width:420px;height:72px;font-size:22px}
+#st-branch{left:660px;top:3060px}
+
+/* scene D — build */
+#title-d{left:1170px;top:2090px}
+#st-loop{left:1430px;top:2260px}
+#key-pill{left:1560px;top:2790px;width:420px;height:84px;font-size:27px;justify-content:center}
+#code-block{position:absolute;left:1140px;top:2960px;width:400px;height:240px;border:2px solid rgba(127,178,255,.35);border-radius:24px;background:rgba(10,16,30,.92);padding:36px 34px;display:flex;flex-direction:column;gap:22px;opacity:0}
+#code-block i{display:block;height:12px;border-radius:6px;background:linear-gradient(90deg,#4f8cff,#9cc5ff);transform-origin:0 50%}
+#code-line-1{width:85%}
+#code-line-2{width:62%}
+#code-line-3{width:74%}
+#st-app-phone{left:1620px;top:2920px}
+#preview-glow{position:absolute;left:1600px;top:2900px;width:440px;height:440px;border:3px dashed #7fb2ff;border-radius:44px;opacity:0}
+.cycle{left:1330px;top:3360px;width:560px;height:96px;justify-content:center;font-size:30px;gap:14px}
+.cycle i{font-style:normal;color:#7fb2ff}
+#st-rocket{left:1790px;top:3380px}

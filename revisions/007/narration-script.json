@@ -1,0 +1,48 @@
+{
+  "language": "en",
+  "delivery": "x1.12 tempo applied to audio files",
+  "beats": [
+    {
+      "n": 1,
+      "start": 0.95,
+      "run": 12.408,
+      "file": "assets/audio/beat-1.mp3",
+      "text": "Somewhere between a toy and a dev platform sits Google's most underrated tool \u2014 a free browser tab for experimenting with the latest Gemini models. It's called Google AI Studio, and here's what it can do."
+    },
+    {
+      "n": 2,
+      "start": 13.738,
+      "run": 11.448,
+      "file": "assets/audio/beat-2.mp3",
+      "text": "AI Studio is the friendly front door to Google's Gemini family. Open it in any browser, sign in, and the latest Gemini models are right there \u2014 no install, no setup, no credit card."
+    },
+    {
+      "n": 3,
+      "start": 25.566,
+      "run": 12.384,
+      "file": "assets/audio/beat-3.mp3",
+      "text": "On the left you chat with the model; on the right you steer it. A system instruction sets the personality, the temperature dial trades precision for imagination, and one menu swaps speed for deep thinking."
+    },
+    {
+      "n": 4,
+      "start": 38.33,
+      "run": 14.04,
+      "file": "assets/audio/beat-4.mp3",
+      "text": "And it isn't just text. Hand it photos, PDFs, audio or whole videos and Gemini understands them all \u2014 a screenshot becomes a summary, a meeting becomes notes, a pile of receipts becomes clean data."
+    },
+    {
+      "n": 5,
+      "start": 52.75,
+      "run": 12.936,
+      "file": "assets/audio/beat-5.mp3",
+      "text": "The real magic is Build mode. Describe an app in plain language, watch Gemini write it, and a live preview appears in seconds. You iterate by chatting \u2014 then export real code you own, with your own API key."
+    },
+    {
+      "n": 6,
+      "start": 66.066,
+      "run": 11.688,
+      "file": "assets/audio/beat-6.mp3",
+      "text": "So that's the loop: prompt it, feed it your world, then build on top of it. Google AI Studio takes you from a curious idea to a working AI app \u2014 free, in one afternoon."
+    }
+  ]
+}
